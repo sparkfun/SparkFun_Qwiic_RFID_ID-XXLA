@@ -47,8 +47,8 @@ void checkTagID()
   // make sure to clear it in between reads. 
   String tagID; 
 	Serial.print("RFID Tag ID: "); 
-	Wire.requestFrom((uint8_t)RFID_ADDR, BYTE_REQUEST); 
-	for( int x = 0; x < BYTE_REQUEST; x++ ) {
+	Wire.requestFrom((uint8_t)RFID_ADDR, TAG_REQUEST); 
+	for( int x = 0; x < TAG_REQUEST; x++ ) {
     tempTag = Wire.read(); 
     // Concatenating the bytes onto the end of "tagID".
     tagID += String(tempTag); 
