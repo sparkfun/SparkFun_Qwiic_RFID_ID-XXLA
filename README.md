@@ -14,8 +14,10 @@ We do not plan to regularly produce SparkFun products so get them while they’r
 Repository Contents
 -------------------
 
-* **/Examples** - A number of examples to show how to read buttons with time, change the I2C address and scan for I2C devices
+
 * **/Firmware** - The core sketch that runs the SparkFun Qwiic RFID ID-XXLA
+  * **/Arduino Examples** - A number of examples to show how to read buttons with time, change the I2C address and scan for I2C devices
+  * **/ATtiny Firmware** - Default firmware for the Qwiic RFID
 * **/Hardware** - Eagle design files (.brd, .sch)
 
 Documentation
