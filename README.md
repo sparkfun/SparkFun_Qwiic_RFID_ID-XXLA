@@ -7,8 +7,8 @@ SparkFun Qwiic RFID ID-XXLA
    <td><a href="https://www.sparkfun.com/products/15209"><img src="https://cdn.sparkfun.com//assets/parts/1/3/6/4/0/15209-SparkFun_RFID_Qwiic_Kit-01a.jpg" alt="RFID Qwiic Kit"></a></td>
   </tr>
   <tr align="center">
-    <td><i>SparkFun RFID Qwiic Reader[<a href="https://www.sparkfun.com/products/15191">SEN-15191</a>]</i></td>
-    <td><i>SparkFun RFID Qwiic Reader Kit[<a href="https://www.sparkfun.com/products/15209">KIT-15209</a>]<i></td>
+    <td><i>SparkFun RFID Qwiic Reader [<a href="https://www.sparkfun.com/products/15191">SEN-15191</a>]</i></td>
+    <td><i>SparkFun RFID Qwiic Reader Kit [<a href="https://www.sparkfun.com/products/15209">KIT-15209</a>]<i></td>
   </tr>
 </table>
      
