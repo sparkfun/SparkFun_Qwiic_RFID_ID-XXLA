@@ -16,14 +16,12 @@ The SparkFun Qwiic RFID ID-XXLA is a simple board that pairs with the ID-3LA, ID
 
 The SparkFun Qwiic RFID has a buzzer and LED that indicates that card has been scanned. We’ve included a jumper to disconnect the buzzer, a jumper for the I2C pull-up resistors, an interrupt jumper, and finally an address jumper. The Qwiic RFID comes fully decked out in Qwiic connectors, no need to solder a thing, just plug it in and start scanning!
 
-We do not plan to regularly produce SparkFun products so get them while they’re hot!
-
 Repository Contents
 -------------------
 
 * **/Firmware** - The core sketch that runs the SparkFun Qwiic RFID ID-XXLA
-  * **/Arduino Examples** - A number of examples to show how to read buttons with time, change the I2C address and scan for I2C devices
-  * **/ATtiny Firmware** - Default firmware for the Qwiic RFID
+* **/Arduino Examples** - A number of examples to show how to read buttons with time, change the I2C address and scan for I2C devices
+* **/ATtiny Firmware** - Default firmware for the Qwiic RFID
 * **/Hardware** - Eagle design files (.brd, .sch)
 
 Documentation
