@@ -31,7 +31,7 @@ Documentation
 
 Arduino Library 
 ----------------
-* **[SparkFun Qwiic RFID Arduino Library](https://github.com/sparkfun/SparkFun_Qwiic_RFID_Arduino_Library)
+* **[SparkFun Qwiic RFID Arduino Library](https://github.com/sparkfun/SparkFun_Qwiic_RFID_Arduino_Library)**
 
 Product Versions
 ----------------
