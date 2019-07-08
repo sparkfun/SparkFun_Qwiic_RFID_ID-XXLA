@@ -29,6 +29,9 @@ Documentation
 
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/sparkfun-qwiic-rfid-idxxla-hookup-guide)** - Basic hookup guide.
 
+Arduino Library 
+----------------
+* **[SparkFun Qwiic RFID Arduino Library](https://github.com/sparkfun/SparkFun_Qwiic_RFID_Arduino_Library)
 
 Product Versions
 ----------------
