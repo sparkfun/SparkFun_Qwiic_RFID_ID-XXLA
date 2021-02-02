@@ -243,6 +243,11 @@ void readSystemSettings(void)
     setting_i2c_address = I2C_ADDRESS_DEFAULT; //By default, we listen for I2C_ADDRESS_DEFAULT
     EEPROM.write(LOCATION_I2C_ADDRESS, setting_i2c_address);
   }
+
+  else if( setting_i2c_address != I2C_ADDRESS_DEFAULT ) {
+    EEPROM.write(LOCATION_I2C_ADDRESS, I2C_ADDRESS_DEFAULT);
+  }
+  
 }
 
 //Begin listening on I2C bus as I2C slave using the global variable setting_i2c_address
