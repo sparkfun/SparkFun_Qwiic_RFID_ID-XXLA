@@ -27,8 +27,8 @@
 #include <avr/power.h> 
 
 #define LOCATION_I2C_ADDRESS 0x01 //Location in EEPROM where the I2C address is stored
-#define I2C_ADDRESS_DEFAULT 125 //0x7D
-#define I2C_ADDRESS_NO_JUMPER 124 //0x7C
+#define I2C_ADDRESS_DEFAULT 0x13 
+#define I2C_ADDRESS_NO_JUMPER 0x14 
 
 #define COMMAND_CHANGE_ADDRESS 0xC7
 
@@ -69,7 +69,7 @@ byte tempTagID[6];
 
 void setup(void)
 {
-  pinMode(addrPin, INPUT_PULLUP); //Default HIGH = 0x7D or 125
+  pinMode(addrPin, INPUT_PULLUP); //Default HIGH = 0x13
   pinMode(interruptPin, OUTPUT); //Tied high and goes low when an RFID has been scanned.
 
   pinMode(rxPin, INPUT); 
