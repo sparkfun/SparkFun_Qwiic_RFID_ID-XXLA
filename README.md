@@ -35,7 +35,7 @@ Arduino Library
 
 Python Package
 ----------------
-* **[SparkFun Qwiic RFID Python Package](https://github.com/sparkfun/Qwiic_RFID_Py)
+* **[SparkFun Qwiic RFID Python Package](https://github.com/sparkfun/Qwiic_RFID_Py)**
 
 Product Versions
 ----------------
