@@ -33,6 +33,10 @@ Arduino Library
 ----------------
 * **[SparkFun Qwiic RFID Arduino Library](https://github.com/sparkfun/SparkFun_Qwiic_RFID_Arduino_Library)**
 
+Python Package
+----------------
+* **[SparkFun Qwiic RFID Python Package](https://github.com/sparkfun/Qwiic_RFID_Py)
+
 Product Versions
 ----------------
 * [SEN-15191](https://www.sparkfun.com/products/15191)- SparkFun Qwiic RFID ID-XXLA
