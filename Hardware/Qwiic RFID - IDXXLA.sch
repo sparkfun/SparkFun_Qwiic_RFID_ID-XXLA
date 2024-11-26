@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18368,8 +18368,8 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <wire x1="147.32" y1="185.42" x2="147.32" y2="83.82" width="0.2032" layer="97" style="shortdash"/>
 <wire x1="81.28" y1="83.82" x2="81.28" y2="0" width="0.2032" layer="97" style="shortdash"/>
 <text x="83.058" y="91.44" size="1.778" layer="97" font="vector">7-Bit Unshifted I2C Address
-Open Jumper (Default): 0x7D
-Closed Jumper: 0x7C
+Open Jumper (Default): 0x13
+Closed Jumper: 0x14
 Software configurable </text>
 <text x="129.54" y="35.56" size="1.778" layer="97" font="vector">Cut Buzzer Jumper 
 to remove buzzer
