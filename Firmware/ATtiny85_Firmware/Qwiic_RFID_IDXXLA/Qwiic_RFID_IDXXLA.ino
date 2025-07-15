@@ -103,7 +103,7 @@ void loop(void)
 			delay(11);//Necessary to not overwhelm the ID-XXLA module baud rate.
 			if( getTagID() ) tagEvent[newestTag].tagTime = millis(); //Get the Tag ID, and verify its' contents, then grab time. 
 		}
-		if( newestTag++ == MAX_TAG_STORAGE ) newestTag = 0; 
+		if( ++newestTag== MAX_TAG_STORAGE ) newestTag = 0; 
 	}
 
   //Set interrupt pin as needed
@@ -220,7 +220,7 @@ void loadNextTagToArray()
     responseBuffer[7] = timeSincePressed >> 16; 
     responseBuffer[8] = timeSincePressed >> 8;
     responseBuffer[9] = timeSincePressed; //LSB
-    if (oldestTag++ == MAX_TAG_STORAGE) oldestTag = 0;
+    if ( ++oldestTag == MAX_TAG_STORAGE ) oldestTag = 0;
   }
   else
   {
