@@ -1,0 +1,3861 @@
+
+/home/amo/.cache/arduino/sketches/19D0DE19B4FED417E74636311A20C9F4/Qwiic_RFID_IDXXLA.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	2a c0       	rjmp	.+84     	; 0x56 <__dtors_end>
+   2:	4e c0       	rjmp	.+156    	; 0xa0 <__bad_interrupt>
+   4:	7c c3       	rjmp	.+1784   	; 0x6fe <__vector_2>
+   6:	7b c3       	rjmp	.+1782   	; 0x6fe <__vector_2>
+   8:	4b c0       	rjmp	.+150    	; 0xa0 <__bad_interrupt>
+   a:	4a c0       	rjmp	.+148    	; 0xa0 <__bad_interrupt>
+   c:	49 c0       	rjmp	.+146    	; 0xa0 <__bad_interrupt>
+   e:	48 c0       	rjmp	.+144    	; 0xa0 <__bad_interrupt>
+  10:	47 c0       	rjmp	.+142    	; 0xa0 <__bad_interrupt>
+  12:	46 c0       	rjmp	.+140    	; 0xa0 <__bad_interrupt>
+  14:	45 c0       	rjmp	.+138    	; 0xa0 <__bad_interrupt>
+  16:	29 c3       	rjmp	.+1618   	; 0x66a <__vector_11>
+  18:	43 c0       	rjmp	.+134    	; 0xa0 <__bad_interrupt>
+  1a:	42 c0       	rjmp	.+132    	; 0xa0 <__bad_interrupt>
+  1c:	41 c0       	rjmp	.+130    	; 0xa0 <__bad_interrupt>
+  1e:	9e c4       	rjmp	.+2364   	; 0x95c <__vector_15>
+  20:	e6 c3       	rjmp	.+1996   	; 0x7ee <__vector_16>
+
+00000022 <__trampolines_end>:
+__trampolines_start():
+  22:	00 00       	nop
+  24:	3a 00       	.word	0x003a	; ????
+  26:	37 00       	.word	0x0037	; ????
+
+00000028 <port_to_output_PGM>:
+  28:	00 00 3b 00 38 00                                   ..;.8.
+
+0000002e <digital_pin_to_port_PGM>:
+  2e:	01 01 01 01 01 01 01 01 02 02 02 02                 ............
+
+0000003a <digital_pin_to_bit_mask_PGM>:
+  3a:	01 02 04 08 10 20 40 80 04 02 01 08                 ..... @.....
+
+00000046 <digital_pin_to_timer_PGM>:
+  46:	00 00 00 00 00 04 03 02 01 00 00 00                 ............
+
+00000052 <__ctors_start>:
+__ctors_start():
+  52:	78 06       	cpc	r7, r24
+
+00000054 <__ctors_end>:
+__dtors_start():
+  54:	cc 06       	cpc	r12, r28
+
+00000056 <__dtors_end>:
+__dtors_end():
+  56:	11 24       	eor	r1, r1
+  58:	1f be       	out	0x3f, r1	; 63
+  5a:	cf e5       	ldi	r28, 0x5F	; 95
+  5c:	d2 e0       	ldi	r29, 0x02	; 2
+  5e:	de bf       	out	0x3e, r29	; 62
+  60:	cd bf       	out	0x3d, r28	; 61
+
+00000062 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  62:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  64:	a2 e7       	ldi	r26, 0x72	; 114
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  66:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  68:	01 c0       	rjmp	.+2      	; 0x6c <.do_clear_bss_start>
+
+0000006a <.do_clear_bss_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  6a:	1d 92       	st	X+, r1
+
+0000006c <.do_clear_bss_start>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  6c:	a5 3f       	cpi	r26, 0xF5	; 245
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  6e:	b2 07       	cpc	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  70:	e1 f7       	brne	.-8      	; 0x6a <.do_clear_bss_loop>
+
+00000072 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  72:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  74:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  76:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  78:	e0 e9       	ldi	r30, 0x90	; 144
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  7a:	fe e0       	ldi	r31, 0x0E	; 14
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  7c:	02 c0       	rjmp	.+4      	; 0x82 <__do_copy_data+0x10>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  7e:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  80:	0d 92       	st	X+, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  82:	a2 37       	cpi	r26, 0x72	; 114
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  84:	b1 07       	cpc	r27, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  86:	d9 f7       	brne	.-10     	; 0x7e <__do_copy_data+0xc>
+
+00000088 <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+  88:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+  8a:	ca e2       	ldi	r28, 0x2A	; 42
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+  8c:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+  8e:	03 c0       	rjmp	.+6      	; 0x96 <__do_global_ctors+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+  90:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+  92:	fe 01       	movw	r30, r28
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+  94:	eb d6       	rcall	.+3542   	; 0xe6c <__tablejump2__>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+  96:	c9 32       	cpi	r28, 0x29	; 41
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+  98:	d1 07       	cpc	r29, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+  9a:	d1 f7       	brne	.-12     	; 0x90 <__do_global_ctors+0x8>
+  9c:	a6 d4       	rcall	.+2380   	; 0x9ea <main>
+  9e:	ec c6       	rjmp	.+3544   	; 0xe78 <__do_global_dtors>
+
+000000a0 <__bad_interrupt>:
+__vector_1():
+  a0:	af cf       	rjmp	.-162    	; 0x0 <__vectors>
+
+000000a2 <TwoWire::available() [clone .constprop.5]>:
+_ZN7TwoWire9availableEv.constprop.5():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:551
+
+// must be called in:
+// slave rx event callback
+// or after requestFrom(address, numBytes)
+int TwoWire::available(void) {
+  if (BufferLength) {
+  a2:	80 91 f4 01 	lds	r24, 0x01F4	; 0x8001f4 <TwoWire::BufferLength>
+  a6:	88 23       	and	r24, r24
+  a8:	29 f0       	breq	.+10     	; 0xb4 <TwoWire::available() [clone .constprop.5]+0x12>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:552
+    return BufferLength - BufferIndex;
+  aa:	90 91 f3 01 	lds	r25, 0x01F3	; 0x8001f3 <TwoWire::BufferIndex>
+  ae:	89 1b       	sub	r24, r25
+  b0:	99 0b       	sbc	r25, r25
+  b2:	08 95       	ret
+USI_TWI_Data_In_Receive_Buffer():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:136
+
+// Check if there is data in the receive buffer.
+unsigned char USI_TWI_Data_In_Receive_Buffer(void)
+{
+  unsigned char tmpRxTail;          // Temporary variable to store volatile
+  tmpRxTail = TWI_RxTail;           // Not necessary, but prevents warnings
+  b4:	90 91 f2 01 	lds	r25, 0x01F2	; 0x8001f2 <TWI_RxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:137
+  return (TWI_RxHead - tmpRxTail) & TWI_RX_BUFFER_MASK; // Return 0 (FALSE) if the receive buffer is empty.
+  b8:	80 91 f1 01 	lds	r24, 0x01F1	; 0x8001f1 <TWI_RxHead>
+  bc:	89 1b       	sub	r24, r25
+  be:	8f 70       	andi	r24, 0x0F	; 15
+_ZN7TwoWire9availableEv.constprop.5():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:554
+  } else {
+    return USI_TWI_Data_In_Receive_Buffer();
+  c0:	90 e0       	ldi	r25, 0x00	; 0
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:556
+  }
+}
+  c2:	08 95       	ret
+
+000000c4 <TwoWire::read() [clone .constprop.4]>:
+_ZN7TwoWire4readEv.constprop.4():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:565
+// or after requestFrom(address, numBytes)
+int TwoWire::read(void) {
+  int value = -1;
+
+  // get each successive byte on each call
+  if (available()) {
+  c4:	ee df       	rcall	.-36     	; 0xa2 <TwoWire::available() [clone .constprop.5]>
+  c6:	89 2b       	or	r24, r25
+  c8:	11 f1       	breq	.+68     	; 0x10e <TwoWire::read() [clone .constprop.4]+0x4a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:566
+    if (BufferLength) {
+  ca:	80 91 f4 01 	lds	r24, 0x01F4	; 0x8001f4 <TwoWire::BufferLength>
+  ce:	88 23       	and	r24, r24
+  d0:	61 f0       	breq	.+24     	; 0xea <TwoWire::read() [clone .constprop.4]+0x26>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:567
+      value = Buffer[BufferIndex];
+  d2:	20 91 f3 01 	lds	r18, 0x01F3	; 0x8001f3 <TwoWire::BufferIndex>
+  d6:	e2 2f       	mov	r30, r18
+  d8:	f0 e0       	ldi	r31, 0x00	; 0
+  da:	ee 58       	subi	r30, 0x8E	; 142
+  dc:	ff 4f       	sbci	r31, 0xFF	; 255
+  de:	80 81       	ld	r24, Z
+  e0:	90 e0       	ldi	r25, 0x00	; 0
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:568
+      ++BufferIndex;
+  e2:	2f 5f       	subi	r18, 0xFF	; 255
+  e4:	20 93 f3 01 	sts	0x01F3, r18	; 0x8001f3 <TwoWire::BufferIndex>
+  e8:	08 95       	ret
+USI_TWI_Receive_Byte():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:112
+// Returns a byte from the receive buffer. Waits if buffer is empty.
+unsigned char USI_TWI_Receive_Byte(void)
+{
+  unsigned char tmptail;
+  unsigned char tmpRxTail; // Temporary variable to store volatile
+  tmpRxTail = TWI_RxTail;  // Not necessary, but prevents warnings
+  ea:	90 91 f2 01 	lds	r25, 0x01F2	; 0x8001f2 <TWI_RxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:113
+  while (TWI_RxHead == tmpRxTail)
+  ee:	80 91 f1 01 	lds	r24, 0x01F1	; 0x8001f1 <TWI_RxHead>
+  f2:	98 17       	cp	r25, r24
+  f4:	e1 f3       	breq	.-8      	; 0xee <TwoWire::read() [clone .constprop.4]+0x2a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:115
+    ;
+  tmptail    = (TWI_RxTail + 1) & TWI_RX_BUFFER_MASK; // Calculate buffer index
+  f6:	e0 91 f2 01 	lds	r30, 0x01F2	; 0x8001f2 <TWI_RxTail>
+  fa:	ef 5f       	subi	r30, 0xFF	; 255
+  fc:	ef 70       	andi	r30, 0x0F	; 15
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:116
+  TWI_RxTail = tmptail;                               // Store new index
+  fe:	e0 93 f2 01 	sts	0x01F2, r30	; 0x8001f2 <TWI_RxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:117
+  return TWI_RxBuf[tmptail];                          // Return data from the buffer.
+ 102:	f0 e0       	ldi	r31, 0x00	; 0
+ 104:	ee 58       	subi	r30, 0x8E	; 142
+ 106:	ff 4f       	sbci	r31, 0xFF	; 255
+_ZN7TwoWire4readEv.constprop.4():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:570
+    } else {
+      value = USI_TWI_Receive_Byte();
+ 108:	80 81       	ld	r24, Z
+ 10a:	90 e0       	ldi	r25, 0x00	; 0
+ 10c:	08 95       	ret
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:562
+
+// must be called in:
+// slave rx event callback
+// or after requestFrom(address, numBytes)
+int TwoWire::read(void) {
+  int value = -1;
+ 10e:	8f ef       	ldi	r24, 0xFF	; 255
+ 110:	9f ef       	ldi	r25, 0xFF	; 255
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:575
+      value = USI_TWI_Receive_Byte();
+    }
+  }
+
+  return value;
+}
+ 112:	08 95       	ret
+
+00000114 <micros>:
+micros():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:360
+    unsigned int r; // needed for some frequencies, optimized away otherwise
+    unsigned char f; // temporary storage for millis fraction counter
+    unsigned char q = 0; // record whether an overflow is flagged
+#endif
+    unsigned long m;
+    uint8_t t, oldSREG = SREG;
+ 114:	3f b7       	in	r19, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:362
+
+    cli();
+ 116:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:367
+#ifdef CORRECT_EXACT_MICROS
+    m = millis_timer_millis;
+    f = millis_timer_fract;
+#else
+    m = millis_timer_overflow_count;
+ 118:	80 91 ed 01 	lds	r24, 0x01ED	; 0x8001ed <millis_timer_overflow_count>
+ 11c:	90 91 ee 01 	lds	r25, 0x01EE	; 0x8001ee <millis_timer_overflow_count+0x1>
+ 120:	a0 91 ef 01 	lds	r26, 0x01EF	; 0x8001ef <millis_timer_overflow_count+0x2>
+ 124:	b0 91 f0 01 	lds	r27, 0x01F0	; 0x8001f0 <millis_timer_overflow_count+0x3>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:370
+#endif
+  #if defined(TCNT0) && (TIMER_TO_USE_FOR_MILLIS == 0) && !defined(TCW0)
+    t = TCNT0;
+ 128:	22 b7       	in	r18, 0x32	; 50
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:382
+  #else
+    #error "Millis()/Micros() timer not defined"
+  #endif
+
+  #if defined(TIFR0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+    if ((TIFR0 & _BV(TOV0)) && (t < 255))
+ 12a:	08 b6       	in	r0, 0x38	; 56
+ 12c:	00 fe       	sbrs	r0, 0
+ 12e:	05 c0       	rjmp	.+10     	; 0x13a <micros+0x26>
+ 130:	2f 3f       	cpi	r18, 0xFF	; 255
+ 132:	19 f0       	breq	.+6      	; 0x13a <micros+0x26>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:384
+    #ifndef CORRECT_EXACT_MICROS
+      m++;
+ 134:	01 96       	adiw	r24, 0x01	; 1
+ 136:	a1 1d       	adc	r26, r1
+ 138:	b1 1d       	adc	r27, r1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:411
+    #else
+      q = 1;
+    #endif
+  #endif
+
+    SREG = oldSREG;
+ 13a:	3f bf       	out	0x3f, r19	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:453
+  #else
+  #if F_CPU < 1000000L
+    return ((m << 8) + t) * MillisTimer_Prescale_Value * (1000000L/F_CPU);
+  #else
+    #if (MillisTimer_Prescale_Value % clockCyclesPerMicrosecond() == 0 && (F_CPU % 1000000 == 0 )) // Can we just do it the naive way? If so great!
+      return ((m << 8) + t) * (MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+ 13c:	ba 2f       	mov	r27, r26
+ 13e:	a9 2f       	mov	r26, r25
+ 140:	98 2f       	mov	r25, r24
+ 142:	88 27       	eor	r24, r24
+ 144:	bc 01       	movw	r22, r24
+ 146:	cd 01       	movw	r24, r26
+ 148:	62 0f       	add	r22, r18
+ 14a:	71 1d       	adc	r23, r1
+ 14c:	81 1d       	adc	r24, r1
+ 14e:	91 1d       	adc	r25, r1
+ 150:	43 e0       	ldi	r20, 0x03	; 3
+ 152:	66 0f       	add	r22, r22
+ 154:	77 1f       	adc	r23, r23
+ 156:	88 1f       	adc	r24, r24
+ 158:	99 1f       	adc	r25, r25
+ 15a:	4a 95       	dec	r20
+ 15c:	d1 f7       	brne	.-12     	; 0x152 <micros+0x3e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:508
+      //return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + ((t+(((m<<8)%clockCyclesPerMicrosecond())) * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond()));
+      return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + (t * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+    #endif
+  #endif
+  #endif // !CORRECT_EXACT_MICROS
+  }
+ 15e:	08 95       	ret
+
+00000160 <delay.constprop.0>:
+delay.constprop.0():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:515
+  static void __empty() {
+    // Empty
+  }
+  void yield(void) __attribute__ ((weak, alias("__empty")));
+
+  void delay(unsigned long ms)
+ 160:	cf 92       	push	r12
+ 162:	df 92       	push	r13
+ 164:	ef 92       	push	r14
+ 166:	ff 92       	push	r15
+ 168:	cf 93       	push	r28
+ 16a:	df 93       	push	r29
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:518
+  {
+    #if (F_CPU>=1000000L)
+    uint16_t start = (uint16_t)micros();
+ 16c:	d3 df       	rcall	.-90     	; 0x114 <micros>
+ 16e:	eb 01       	movw	r28, r22
+ 170:	8b e0       	ldi	r24, 0x0B	; 11
+ 172:	c8 2e       	mov	r12, r24
+ 174:	d1 2c       	mov	r13, r1
+ 176:	e1 2c       	mov	r14, r1
+ 178:	f1 2c       	mov	r15, r1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:522
+
+    while (ms > 0) {
+      yield();
+      while (((uint16_t)micros() - start) >= 1000 && ms) {
+ 17a:	cc df       	rcall	.-104    	; 0x114 <micros>
+ 17c:	6c 1b       	sub	r22, r28
+ 17e:	7d 0b       	sbc	r23, r29
+ 180:	68 3e       	cpi	r22, 0xE8	; 232
+ 182:	73 40       	sbci	r23, 0x03	; 3
+ 184:	a0 f0       	brcs	.+40     	; 0x1ae <delay.constprop.0+0x4e>
+ 186:	c1 14       	cp	r12, r1
+ 188:	d1 04       	cpc	r13, r1
+ 18a:	e1 04       	cpc	r14, r1
+ 18c:	f1 04       	cpc	r15, r1
+ 18e:	39 f4       	brne	.+14     	; 0x19e <delay.constprop.0+0x3e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:532
+    #else
+    uint32_t start = millis();
+    while((millis() - start) < ms)  /* NOP */yield();
+    return;
+    #endif
+  }
+ 190:	df 91       	pop	r29
+ 192:	cf 91       	pop	r28
+ 194:	ff 90       	pop	r15
+ 196:	ef 90       	pop	r14
+ 198:	df 90       	pop	r13
+ 19a:	cf 90       	pop	r12
+ 19c:	08 95       	ret
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:523
+    uint16_t start = (uint16_t)micros();
+
+    while (ms > 0) {
+      yield();
+      while (((uint16_t)micros() - start) >= 1000 && ms) {
+        ms--;
+ 19e:	81 e0       	ldi	r24, 0x01	; 1
+ 1a0:	c8 1a       	sub	r12, r24
+ 1a2:	d1 08       	sbc	r13, r1
+ 1a4:	e1 08       	sbc	r14, r1
+ 1a6:	f1 08       	sbc	r15, r1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:524
+        start += 1000;
+ 1a8:	c8 51       	subi	r28, 0x18	; 24
+ 1aa:	dc 4f       	sbci	r29, 0xFC	; 252
+ 1ac:	e6 cf       	rjmp	.-52     	; 0x17a <delay.constprop.0+0x1a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:520
+  void delay(unsigned long ms)
+  {
+    #if (F_CPU>=1000000L)
+    uint16_t start = (uint16_t)micros();
+
+    while (ms > 0) {
+ 1ae:	c1 14       	cp	r12, r1
+ 1b0:	d1 04       	cpc	r13, r1
+ 1b2:	e1 04       	cpc	r14, r1
+ 1b4:	f1 04       	cpc	r15, r1
+ 1b6:	09 f7       	brne	.-62     	; 0x17a <delay.constprop.0+0x1a>
+ 1b8:	eb cf       	rjmp	.-42     	; 0x190 <delay.constprop.0+0x30>
+
+000001ba <Print::write(unsigned char const*, unsigned int)>:
+_ZN5Print5writeEPKhj():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/Print.cpp:34
+
+// Public Methods //////////////////////////////////////////////////////////////
+
+/* default implementation: may be overridden */
+size_t Print::write(const uint8_t *buffer, size_t size)
+{
+ 1ba:	cf 92       	push	r12
+ 1bc:	df 92       	push	r13
+ 1be:	ef 92       	push	r14
+ 1c0:	ff 92       	push	r15
+ 1c2:	0f 93       	push	r16
+ 1c4:	1f 93       	push	r17
+ 1c6:	cf 93       	push	r28
+ 1c8:	df 93       	push	r29
+ 1ca:	6c 01       	movw	r12, r24
+ 1cc:	eb 01       	movw	r28, r22
+ 1ce:	7b 01       	movw	r14, r22
+ 1d0:	e4 0e       	add	r14, r20
+ 1d2:	f5 1e       	adc	r15, r21
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/Print.cpp:35
+  size_t n = 0;
+ 1d4:	10 e0       	ldi	r17, 0x00	; 0
+ 1d6:	00 e0       	ldi	r16, 0x00	; 0
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/Print.cpp:36
+  while (size--) {
+ 1d8:	ce 15       	cp	r28, r14
+ 1da:	df 05       	cpc	r29, r15
+ 1dc:	61 f0       	breq	.+24     	; 0x1f6 <Print::write(unsigned char const*, unsigned int)+0x3c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/Print.cpp:37
+    n += write(*buffer++);
+ 1de:	69 91       	ld	r22, Y+
+ 1e0:	d6 01       	movw	r26, r12
+ 1e2:	ed 91       	ld	r30, X+
+ 1e4:	fc 91       	ld	r31, X
+ 1e6:	01 90       	ld	r0, Z+
+ 1e8:	f0 81       	ld	r31, Z
+ 1ea:	e0 2d       	mov	r30, r0
+ 1ec:	c6 01       	movw	r24, r12
+ 1ee:	09 95       	icall
+ 1f0:	08 0f       	add	r16, r24
+ 1f2:	19 1f       	adc	r17, r25
+ 1f4:	f1 cf       	rjmp	.-30     	; 0x1d8 <Print::write(unsigned char const*, unsigned int)+0x1e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/Print.cpp:40
+  }
+  return n;
+}
+ 1f6:	c8 01       	movw	r24, r16
+ 1f8:	df 91       	pop	r29
+ 1fa:	cf 91       	pop	r28
+ 1fc:	1f 91       	pop	r17
+ 1fe:	0f 91       	pop	r16
+ 200:	ff 90       	pop	r15
+ 202:	ef 90       	pop	r14
+ 204:	df 90       	pop	r13
+ 206:	cf 90       	pop	r12
+ 208:	08 95       	ret
+
+0000020a <SoftwareSerial::peek()>:
+_ZN14SoftwareSerial4peekEv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:481
+  SREG = oldSREG;
+}
+
+int SoftwareSerial::peek()
+{
+  if (!isListening())
+ 20a:	20 91 e7 00 	lds	r18, 0x00E7	; 0x8000e7 <SoftwareSerial::active_object>
+ 20e:	30 91 e8 00 	lds	r19, 0x00E8	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ 212:	28 17       	cp	r18, r24
+ 214:	39 07       	cpc	r19, r25
+ 216:	81 f4       	brne	.+32     	; 0x238 <SoftwareSerial::peek()+0x2e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:485
+    return -1;
+
+  // Empty buffer?
+  if (_receive_buffer_head == _receive_buffer_tail)
+ 218:	90 91 e5 00 	lds	r25, 0x00E5	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+ 21c:	80 91 e6 00 	lds	r24, 0x00E6	; 0x8000e6 <SoftwareSerial::_receive_buffer_tail>
+ 220:	98 17       	cp	r25, r24
+ 222:	51 f0       	breq	.+20     	; 0x238 <SoftwareSerial::peek()+0x2e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:489
+    return -1;
+
+  // Read from "head"
+  return _receive_buffer[_receive_buffer_head];
+ 224:	e0 91 e5 00 	lds	r30, 0x00E5	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+ 228:	f0 e0       	ldi	r31, 0x00	; 0
+ 22a:	eb 55       	subi	r30, 0x5B	; 91
+ 22c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 22e:	80 81       	ld	r24, Z
+ 230:	08 2e       	mov	r0, r24
+ 232:	00 0c       	add	r0, r0
+ 234:	99 0b       	sbc	r25, r25
+ 236:	08 95       	ret
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:482
+}
+
+int SoftwareSerial::peek()
+{
+  if (!isListening())
+    return -1;
+ 238:	8f ef       	ldi	r24, 0xFF	; 255
+ 23a:	9f ef       	ldi	r25, 0xFF	; 255
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:490
+  if (_receive_buffer_head == _receive_buffer_tail)
+    return -1;
+
+  // Read from "head"
+  return _receive_buffer[_receive_buffer_head];
+}
+ 23c:	08 95       	ret
+
+0000023e <SoftwareSerial::flush()>:
+_ZN14SoftwareSerial5flushEv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:470
+  return 1;
+}
+
+void SoftwareSerial::flush()
+{
+  if (!isListening())
+ 23e:	20 91 e7 00 	lds	r18, 0x00E7	; 0x8000e7 <SoftwareSerial::active_object>
+ 242:	30 91 e8 00 	lds	r19, 0x00E8	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ 246:	28 17       	cp	r18, r24
+ 248:	39 07       	cpc	r19, r25
+ 24a:	39 f4       	brne	.+14     	; 0x25a <SoftwareSerial::flush()+0x1c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:473
+    return;
+
+  uint8_t oldSREG = SREG;
+ 24c:	8f b7       	in	r24, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:474
+  cli();
+ 24e:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:475
+  _receive_buffer_head = _receive_buffer_tail = 0;
+ 250:	10 92 e6 00 	sts	0x00E6, r1	; 0x8000e6 <SoftwareSerial::_receive_buffer_tail>
+ 254:	10 92 e5 00 	sts	0x00E5, r1	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:476
+  SREG = oldSREG;
+ 258:	8f bf       	out	0x3f, r24	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:477
+}
+ 25a:	08 95       	ret
+
+0000025c <SoftwareSerial::write(unsigned char)>:
+_ZN14SoftwareSerial5writeEh():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:414
+
+  return (_receive_buffer_tail + _SS_MAX_RX_BUFF - _receive_buffer_head) % _SS_MAX_RX_BUFF;
+}
+
+size_t SoftwareSerial::write(uint8_t b)
+{
+ 25c:	ef 92       	push	r14
+ 25e:	ff 92       	push	r15
+ 260:	0f 93       	push	r16
+ 262:	1f 93       	push	r17
+ 264:	cf 93       	push	r28
+ 266:	df 93       	push	r29
+ 268:	dc 01       	movw	r26, r24
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:415
+  if (_tx_delay == 0) {
+ 26a:	5c 96       	adiw	r26, 0x1c	; 28
+ 26c:	ed 90       	ld	r14, X+
+ 26e:	fc 90       	ld	r15, X
+ 270:	5d 97       	sbiw	r26, 0x1d	; 29
+ 272:	e1 14       	cp	r14, r1
+ 274:	f1 04       	cpc	r15, r1
+ 276:	79 f4       	brne	.+30     	; 0x296 <__stack+0x37>
+_ZN5Print13setWriteErrorEi():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/Print.h:73
+  private:
+    int write_error;
+    size_t printNumber(unsigned long, uint8_t);
+    size_t printFloat(double, uint8_t);
+  protected:
+    void setWriteError(int err = 1) { write_error = err; }
+ 278:	81 e0       	ldi	r24, 0x01	; 1
+ 27a:	90 e0       	ldi	r25, 0x00	; 0
+ 27c:	13 96       	adiw	r26, 0x03	; 3
+ 27e:	9c 93       	st	X, r25
+ 280:	8e 93       	st	-X, r24
+ 282:	12 97       	sbiw	r26, 0x02	; 2
+_ZN14SoftwareSerial5writeEh():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:417
+    setWriteError();
+    return 0;
+ 284:	90 e0       	ldi	r25, 0x00	; 0
+ 286:	80 e0       	ldi	r24, 0x00	; 0
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:466
+
+  SREG = oldSREG; // turn interrupts back on
+  tunedDelay(_tx_delay);
+
+  return 1;
+}
+ 288:	df 91       	pop	r29
+ 28a:	cf 91       	pop	r28
+ 28c:	1f 91       	pop	r17
+ 28e:	0f 91       	pop	r16
+ 290:	ff 90       	pop	r15
+ 292:	ef 90       	pop	r14
+ 294:	08 95       	ret
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:424
+
+  // By declaring these as local variables, the compiler will put them
+  // in registers _before_ disabling interrupts and entering the
+  // critical timing sections below, which makes it a lot easier to
+  // verify the cycle timings
+  volatile uint8_t *reg = _transmitPortRegister;
+ 296:	51 96       	adiw	r26, 0x11	; 17
+ 298:	ed 91       	ld	r30, X+
+ 29a:	fc 91       	ld	r31, X
+ 29c:	52 97       	sbiw	r26, 0x12	; 18
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:425
+  uint8_t reg_mask = _transmitBitMask;
+ 29e:	50 96       	adiw	r26, 0x10	; 16
+ 2a0:	8c 91       	ld	r24, X
+ 2a2:	50 97       	sbiw	r26, 0x10	; 16
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:426
+  uint8_t inv_mask = ~_transmitBitMask;
+ 2a4:	98 2f       	mov	r25, r24
+ 2a6:	90 95       	com	r25
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:427
+  uint8_t oldSREG = SREG;
+ 2a8:	0f b7       	in	r16, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:428
+  bool inv = _inverse_logic;
+ 2aa:	5e 96       	adiw	r26, 0x1e	; 30
+ 2ac:	2c 91       	ld	r18, X
+ 2ae:	5e 97       	sbiw	r26, 0x1e	; 30
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:431
+  uint16_t delay = _tx_delay;
+
+  if (inv)
+ 2b0:	12 2f       	mov	r17, r18
+ 2b2:	12 70       	andi	r17, 0x02	; 2
+ 2b4:	21 fd       	sbrc	r18, 1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:432
+    b = ~b;
+ 2b6:	60 95       	com	r22
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:434
+
+  cli();  // turn off interrupts for a clean txmit
+ 2b8:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:438
+
+  // Write the start bit
+  if (inv)
+    *reg |= reg_mask;
+ 2ba:	20 81       	ld	r18, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:437
+    b = ~b;
+
+  cli();  // turn off interrupts for a clean txmit
+
+  // Write the start bit
+  if (inv)
+ 2bc:	11 23       	and	r17, r17
+ 2be:	19 f1       	breq	.+70     	; 0x306 <__stack+0xa7>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:438
+    *reg |= reg_mask;
+ 2c0:	28 2b       	or	r18, r24
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:440
+  else
+    *reg &= inv_mask;
+ 2c2:	20 83       	st	Z, r18
+_delay_loop_2():
+/home/amo/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+	__asm__ volatile (
+		"1: sbiw %0,1" "\n\t"
+		"brne 1b"
+		: "=w" (__count)
+		: "0" (__count)
+	);
+ 2c4:	e7 01       	movw	r28, r14
+ 2c6:	21 97       	sbiw	r28, 0x01	; 1
+ 2c8:	f1 f7       	brne	.-4      	; 0x2c6 <__stack+0x67>
+ 2ca:	28 e0       	ldi	r18, 0x08	; 8
+_ZN14SoftwareSerial5writeEh():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:447
+  tunedDelay(delay);
+
+  // Write each of the 8 bits
+  for (uint8_t i = 8; i > 0; --i)
+  {
+    if (b & 1) // choose bit
+ 2cc:	46 2f       	mov	r20, r22
+ 2ce:	50 e0       	ldi	r21, 0x00	; 0
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:448
+      *reg |= reg_mask; // send 1
+ 2d0:	30 81       	ld	r19, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:447
+  tunedDelay(delay);
+
+  // Write each of the 8 bits
+  for (uint8_t i = 8; i > 0; --i)
+  {
+    if (b & 1) // choose bit
+ 2d2:	60 ff       	sbrs	r22, 0
+ 2d4:	1a c0       	rjmp	.+52     	; 0x30a <__stack+0xab>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:448
+      *reg |= reg_mask; // send 1
+ 2d6:	38 2b       	or	r19, r24
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:450
+    else
+      *reg &= inv_mask; // send 0
+ 2d8:	30 83       	st	Z, r19
+_delay_loop_2():
+/home/amo/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 2da:	e7 01       	movw	r28, r14
+ 2dc:	21 97       	sbiw	r28, 0x01	; 1
+ 2de:	f1 f7       	brne	.-4      	; 0x2dc <__stack+0x7d>
+_ZN14SoftwareSerial5writeEh():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:453
+
+    tunedDelay(delay);
+    b >>= 1;
+ 2e0:	ba 01       	movw	r22, r20
+ 2e2:	75 95       	asr	r23
+ 2e4:	67 95       	ror	r22
+ 2e6:	21 50       	subi	r18, 0x01	; 1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:445
+    *reg &= inv_mask;
+
+  tunedDelay(delay);
+
+  // Write each of the 8 bits
+  for (uint8_t i = 8; i > 0; --i)
+ 2e8:	89 f7       	brne	.-30     	; 0x2cc <__stack+0x6d>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:457
+    tunedDelay(delay);
+    b >>= 1;
+  }
+
+  // restore pin to natural state
+  if (inv)
+ 2ea:	11 23       	and	r17, r17
+ 2ec:	81 f0       	breq	.+32     	; 0x30e <__stack+0xaf>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:458
+    *reg &= inv_mask;
+ 2ee:	80 81       	ld	r24, Z
+ 2f0:	89 23       	and	r24, r25
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:460
+  else
+    *reg |= reg_mask;
+ 2f2:	80 83       	st	Z, r24
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:462
+
+  SREG = oldSREG; // turn interrupts back on
+ 2f4:	0f bf       	out	0x3f, r16	; 63
+_delay_loop_2():
+/home/amo/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 2f6:	5c 96       	adiw	r26, 0x1c	; 28
+ 2f8:	8d 91       	ld	r24, X+
+ 2fa:	9c 91       	ld	r25, X
+ 2fc:	01 97       	sbiw	r24, 0x01	; 1
+ 2fe:	f1 f7       	brne	.-4      	; 0x2fc <__stack+0x9d>
+_ZN14SoftwareSerial5writeEh():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:465
+  tunedDelay(_tx_delay);
+
+  return 1;
+ 300:	81 e0       	ldi	r24, 0x01	; 1
+ 302:	90 e0       	ldi	r25, 0x00	; 0
+ 304:	c1 cf       	rjmp	.-126    	; 0x288 <__stack+0x29>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:440
+
+  // Write the start bit
+  if (inv)
+    *reg |= reg_mask;
+  else
+    *reg &= inv_mask;
+ 306:	29 23       	and	r18, r25
+ 308:	dc cf       	rjmp	.-72     	; 0x2c2 <__stack+0x63>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:450
+  for (uint8_t i = 8; i > 0; --i)
+  {
+    if (b & 1) // choose bit
+      *reg |= reg_mask; // send 1
+    else
+      *reg &= inv_mask; // send 0
+ 30a:	39 23       	and	r19, r25
+ 30c:	e5 cf       	rjmp	.-54     	; 0x2d8 <__stack+0x79>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:460
+
+  // restore pin to natural state
+  if (inv)
+    *reg &= inv_mask;
+  else
+    *reg |= reg_mask;
+ 30e:	90 81       	ld	r25, Z
+ 310:	89 2b       	or	r24, r25
+ 312:	ef cf       	rjmp	.-34     	; 0x2f2 <__stack+0x93>
+
+00000314 <SoftwareSerial::available()>:
+_ZN14SoftwareSerial9availableEv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:407
+  return d;
+}
+
+int SoftwareSerial::available()
+{
+  if (!isListening())
+ 314:	20 91 e7 00 	lds	r18, 0x00E7	; 0x8000e7 <SoftwareSerial::active_object>
+ 318:	30 91 e8 00 	lds	r19, 0x00E8	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ 31c:	28 17       	cp	r18, r24
+ 31e:	39 07       	cpc	r19, r25
+ 320:	69 f4       	brne	.+26     	; 0x33c <SoftwareSerial::available()+0x28>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:410
+    return 0;
+
+  return (_receive_buffer_tail + _SS_MAX_RX_BUFF - _receive_buffer_head) % _SS_MAX_RX_BUFF;
+ 322:	80 91 e6 00 	lds	r24, 0x00E6	; 0x8000e6 <SoftwareSerial::_receive_buffer_tail>
+ 326:	20 91 e5 00 	lds	r18, 0x00E5	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+ 32a:	90 e0       	ldi	r25, 0x00	; 0
+ 32c:	80 5c       	subi	r24, 0xC0	; 192
+ 32e:	9f 4f       	sbci	r25, 0xFF	; 255
+ 330:	82 1b       	sub	r24, r18
+ 332:	91 09       	sbc	r25, r1
+ 334:	60 e4       	ldi	r22, 0x40	; 64
+ 336:	70 e0       	ldi	r23, 0x00	; 0
+ 338:	72 d5       	rcall	.+2788   	; 0xe1e <__divmodhi4>
+ 33a:	08 95       	ret
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:408
+}
+
+int SoftwareSerial::available()
+{
+  if (!isListening())
+    return 0;
+ 33c:	90 e0       	ldi	r25, 0x00	; 0
+ 33e:	80 e0       	ldi	r24, 0x00	; 0
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:411
+
+  return (_receive_buffer_tail + _SS_MAX_RX_BUFF - _receive_buffer_head) % _SS_MAX_RX_BUFF;
+}
+ 340:	08 95       	ret
+
+00000342 <SoftwareSerial::read()>:
+_ZN14SoftwareSerial4readEv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:392
+
+
+// Read data from buffer
+int SoftwareSerial::read()
+{
+  if (!isListening())
+ 342:	20 91 e7 00 	lds	r18, 0x00E7	; 0x8000e7 <SoftwareSerial::active_object>
+ 346:	30 91 e8 00 	lds	r19, 0x00E8	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ 34a:	28 17       	cp	r18, r24
+ 34c:	39 07       	cpc	r19, r25
+ 34e:	b9 f4       	brne	.+46     	; 0x37e <SoftwareSerial::read()+0x3c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:396
+    return -1;
+
+  // Empty buffer?
+  if (_receive_buffer_head == _receive_buffer_tail)
+ 350:	90 91 e5 00 	lds	r25, 0x00E5	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+ 354:	80 91 e6 00 	lds	r24, 0x00E6	; 0x8000e6 <SoftwareSerial::_receive_buffer_tail>
+ 358:	98 17       	cp	r25, r24
+ 35a:	89 f0       	breq	.+34     	; 0x37e <SoftwareSerial::read()+0x3c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:400
+    return -1;
+
+  // Read from "head"
+  uint8_t d = _receive_buffer[_receive_buffer_head]; // grab next byte
+ 35c:	e0 91 e5 00 	lds	r30, 0x00E5	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+ 360:	f0 e0       	ldi	r31, 0x00	; 0
+ 362:	eb 55       	subi	r30, 0x5B	; 91
+ 364:	ff 4f       	sbci	r31, 0xFF	; 255
+ 366:	80 81       	ld	r24, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:401
+  _receive_buffer_head = (_receive_buffer_head + 1) % _SS_MAX_RX_BUFF;
+ 368:	20 91 e5 00 	lds	r18, 0x00E5	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+ 36c:	30 e0       	ldi	r19, 0x00	; 0
+ 36e:	2f 5f       	subi	r18, 0xFF	; 255
+ 370:	3f 4f       	sbci	r19, 0xFF	; 255
+ 372:	2f 73       	andi	r18, 0x3F	; 63
+ 374:	33 27       	eor	r19, r19
+ 376:	20 93 e5 00 	sts	0x00E5, r18	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:402
+  return d;
+ 37a:	90 e0       	ldi	r25, 0x00	; 0
+ 37c:	08 95       	ret
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:393
+
+// Read data from buffer
+int SoftwareSerial::read()
+{
+  if (!isListening())
+    return -1;
+ 37e:	8f ef       	ldi	r24, 0xFF	; 255
+ 380:	9f ef       	ldi	r25, 0xFF	; 255
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:403
+
+  // Read from "head"
+  uint8_t d = _receive_buffer[_receive_buffer_head]; // grab next byte
+  _receive_buffer_head = (_receive_buffer_head + 1) % _SS_MAX_RX_BUFF;
+  return d;
+}
+ 382:	08 95       	ret
+
+00000384 <USI_TWI_Slave_Initialise>:
+USI_TWI_Slave_Initialise():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:54
+static volatile uint8_t TWI_TxHead;
+static volatile uint8_t TWI_TxTail;
+
+void Flush_TWI_Buffers(void)
+{
+  TWI_RxTail = 0;
+ 384:	10 92 f2 01 	sts	0x01F2, r1	; 0x8001f2 <TWI_RxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:55
+  TWI_RxHead = 0;
+ 388:	10 92 f1 01 	sts	0x01F1, r1	; 0x8001f1 <TWI_RxHead>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:56
+  TWI_TxTail = 0;
+ 38c:	10 92 9f 00 	sts	0x009F, r1	; 0x80009f <TWI_TxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:57
+  TWI_TxHead = 0;
+ 390:	10 92 a0 00 	sts	0x00A0, r1	; 0x8000a0 <TWI_TxHead>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:69
+----------------------------------------------------------*/
+void USI_TWI_Slave_Initialise(unsigned char TWI_ownAddress)
+{
+  Flush_TWI_Buffers();
+
+  TWI_slaveAddress = TWI_ownAddress;
+ 394:	80 93 a3 00 	sts	0x00A3, r24	; 0x8000a3 <TWI_slaveAddress>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:71
+
+  USI_TWI_On_Slave_Transmit = 0;
+ 398:	10 92 a2 00 	sts	0x00A2, r1	; 0x8000a2 <USI_TWI_On_Slave_Transmit+0x1>
+ 39c:	10 92 a1 00 	sts	0x00A1, r1	; 0x8000a1 <USI_TWI_On_Slave_Transmit>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:72
+  USI_TWI_On_Slave_Receive = 0;
+ 3a0:	10 92 9e 00 	sts	0x009E, r1	; 0x80009e <USI_TWI_On_Slave_Receive+0x1>
+ 3a4:	10 92 9d 00 	sts	0x009D, r1	; 0x80009d <USI_TWI_On_Slave_Receive>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:74
+
+  PORT_USI_CL |= (1 << PORT_USI_SCL);     // Set SCL high
+ 3a8:	dc 9a       	sbi	0x1b, 4	; 27
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:75
+  PORT_USI |= (1 << PORT_USI_SDA);        // Set SDA high
+ 3aa:	de 9a       	sbi	0x1b, 6	; 27
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:76
+  DDR_USI_CL |= (1 << PORT_USI_SCL);      // Set SCL as output
+ 3ac:	d4 9a       	sbi	0x1a, 4	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:77
+  DDR_USI &= ~(1 << PORT_USI_SDA);        // Set SDA as input
+ 3ae:	d6 98       	cbi	0x1a, 6	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:78
+  USICR = (1 << USISIE) | (0 << USIOIE) | // Enable Start Condition Interrupt. Disable Overflow Interrupt.
+ 3b0:	88 ea       	ldi	r24, 0xA8	; 168
+ 3b2:	8d b9       	out	0x0d, r24	; 13
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:83
+          (1 << USIWM1) | (0 << USIWM0) | // Set USI in Two-wire mode. No USI Counter overflow prior
+                                          // to first Start Condition (potential failure)
+          (1 << USICS1) | (0 << USICS0) | (0 << USICLK) | // Shift Register Clock Source = External, positive edge
+          (0 << USITC);
+  USISR = 0xF0; // Clear all flags and reset overflow counter
+ 3b4:	80 ef       	ldi	r24, 0xF0	; 240
+ 3b6:	8e b9       	out	0x0e, r24	; 14
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:84
+}
+ 3b8:	08 95       	ret
+
+000003ba <requestEvent()>:
+_Z12requestEventv():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:203
+}
+
+//Send back a number of bytes via an array, max is 8 bytes at a time, 6 byte TAG ID and 2 byte time stamp.
+//When the RFID module gets a request for data from the user, this function is called as an interrupt.
+void requestEvent()
+{
+ 3ba:	0f 93       	push	r16
+ 3bc:	1f 93       	push	r17
+loadNextTagToArray():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:212
+}
+
+//Take the FIFO button press off the stack and load it into the transmit array
+void loadNextTagToArray()
+{
+  if (oldestTag != newestTag)
+ 3be:	90 91 ff 00 	lds	r25, 0x00FF	; 0x8000ff <oldestTag>
+ 3c2:	80 91 c8 01 	lds	r24, 0x01C8	; 0x8001c8 <newestTag>
+ 3c6:	a2 e9       	ldi	r26, 0x92	; 146
+ 3c8:	b0 e0       	ldi	r27, 0x00	; 0
+_Z12requestEventv():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:214
+  {
+		for( int i = 0; i < 6; i ++ )
+ 3ca:	30 e0       	ldi	r19, 0x00	; 0
+ 3cc:	20 e0       	ldi	r18, 0x00	; 0
+loadNextTagToArray():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:212
+}
+
+//Take the FIFO button press off the stack and load it into the transmit array
+void loadNextTagToArray()
+{
+  if (oldestTag != newestTag)
+ 3ce:	98 13       	cpse	r25, r24
+ 3d0:	2f c0       	rjmp	.+94     	; 0x430 <__LOCK_REGION_LENGTH__+0x30>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:230
+  else
+  {
+    //No new ID's. 
+		for( int i = 0; i < 8; i++ )
+		{
+			responseBuffer[i] = 0; 
+ 3d2:	10 92 92 00 	sts	0x0092, r1	; 0x800092 <responseBuffer>
+ 3d6:	10 92 93 00 	sts	0x0093, r1	; 0x800093 <responseBuffer+0x1>
+ 3da:	10 92 94 00 	sts	0x0094, r1	; 0x800094 <responseBuffer+0x2>
+ 3de:	10 92 95 00 	sts	0x0095, r1	; 0x800095 <responseBuffer+0x3>
+ 3e2:	10 92 96 00 	sts	0x0096, r1	; 0x800096 <responseBuffer+0x4>
+ 3e6:	10 92 97 00 	sts	0x0097, r1	; 0x800097 <responseBuffer+0x5>
+ 3ea:	10 92 98 00 	sts	0x0098, r1	; 0x800098 <responseBuffer+0x6>
+ 3ee:	10 92 99 00 	sts	0x0099, r1	; 0x800099 <responseBuffer+0x7>
+write():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:507
+
+// must be called in:
+// slave tx event callback
+// or after beginTransmission(address)
+size_t TwoWire::write(uint8_t data) {
+  if (transmitting) { // in master transmitter mode
+ 3f2:	60 91 9c 00 	lds	r22, 0x009C	; 0x80009c <TwoWire::transmitting>
+ 3f6:	30 91 f4 01 	lds	r19, 0x01F4	; 0x8001f4 <TwoWire::BufferLength>
+ 3fa:	90 91 f3 01 	lds	r25, 0x01F3	; 0x8001f3 <TwoWire::BufferIndex>
+ 3fe:	20 e0       	ldi	r18, 0x00	; 0
+_Z12requestEventv():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:205
+//Send back a number of bytes via an array, max is 8 bytes at a time, 6 byte TAG ID and 2 byte time stamp.
+//When the RFID module gets a request for data from the user, this function is called as an interrupt.
+void requestEvent()
+{
+  loadNextTagToArray(); //Send response buffer
+  for (byte x = 0 ; x < responseSize ; x++)
+ 400:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 404:	28 17       	cp	r18, r24
+ 406:	08 f0       	brcs	.+2      	; 0x40a <__LOCK_REGION_LENGTH__+0xa>
+ 408:	6d c0       	rjmp	.+218    	; 0x4e4 <__LOCK_REGION_LENGTH__+0xe4>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:206
+    Wire.write(responseBuffer[x]);
+ 40a:	e2 2f       	mov	r30, r18
+ 40c:	f0 e0       	ldi	r31, 0x00	; 0
+ 40e:	ee 56       	subi	r30, 0x6E	; 110
+ 410:	ff 4f       	sbci	r31, 0xFF	; 255
+ 412:	50 81       	ld	r21, Z
+write():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:507
+ 414:	66 23       	and	r22, r22
+ 416:	09 f4       	brne	.+2      	; 0x41a <__LOCK_REGION_LENGTH__+0x1a>
+ 418:	4c c0       	rjmp	.+152    	; 0x4b2 <__LOCK_REGION_LENGTH__+0xb2>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:509
+    // don't bother if buffer is full
+    if (BufferLength >= TWI_BUFFER_SIZE) {
+ 41a:	30 32       	cpi	r19, 0x20	; 32
+ 41c:	38 f4       	brcc	.+14     	; 0x42c <__LOCK_REGION_LENGTH__+0x2c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:513
+      return 0;
+    }
+    // put byte in tx buffer
+    Buffer[BufferIndex] = data;
+ 41e:	e9 2f       	mov	r30, r25
+ 420:	f0 e0       	ldi	r31, 0x00	; 0
+ 422:	ee 58       	subi	r30, 0x8E	; 142
+ 424:	ff 4f       	sbci	r31, 0xFF	; 255
+ 426:	50 83       	st	Z, r21
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:514
+    ++BufferIndex;
+ 428:	9f 5f       	subi	r25, 0xFF	; 255
+ 42a:	39 2f       	mov	r19, r25
+_Z12requestEventv():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:205
+//Send back a number of bytes via an array, max is 8 bytes at a time, 6 byte TAG ID and 2 byte time stamp.
+//When the RFID module gets a request for data from the user, this function is called as an interrupt.
+void requestEvent()
+{
+  loadNextTagToArray(); //Send response buffer
+  for (byte x = 0 ; x < responseSize ; x++)
+ 42c:	2f 5f       	subi	r18, 0xFF	; 255
+ 42e:	e8 cf       	rjmp	.-48     	; 0x400 <__LOCK_REGION_LENGTH__>
+loadNextTagToArray():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:216
+{
+  if (oldestTag != newestTag)
+  {
+		for( int i = 0; i < 6; i ++ )
+		{
+			responseBuffer[i] = tagEvent[oldestTag].tagID[i];
+ 430:	80 91 ff 00 	lds	r24, 0x00FF	; 0x8000ff <oldestTag>
+ 434:	90 e0       	ldi	r25, 0x00	; 0
+ 436:	6a e0       	ldi	r22, 0x0A	; 10
+ 438:	70 e0       	ldi	r23, 0x00	; 0
+ 43a:	e0 d4       	rcall	.+2496   	; 0xdfc <__mulhi3>
+ 43c:	80 50       	subi	r24, 0x00	; 0
+ 43e:	9f 4f       	sbci	r25, 0xFF	; 255
+ 440:	fc 01       	movw	r30, r24
+ 442:	e2 0f       	add	r30, r18
+ 444:	f3 1f       	adc	r31, r19
+ 446:	80 81       	ld	r24, Z
+ 448:	8d 93       	st	X+, r24
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:214
+//Take the FIFO button press off the stack and load it into the transmit array
+void loadNextTagToArray()
+{
+  if (oldestTag != newestTag)
+  {
+		for( int i = 0; i < 6; i ++ )
+ 44a:	2f 5f       	subi	r18, 0xFF	; 255
+ 44c:	3f 4f       	sbci	r19, 0xFF	; 255
+ 44e:	26 30       	cpi	r18, 0x06	; 6
+ 450:	31 05       	cpc	r19, r1
+ 452:	71 f7       	brne	.-36     	; 0x430 <__LOCK_REGION_LENGTH__+0x30>
+millis():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:341
+  }
+
+  unsigned long millis()
+  {
+    unsigned long m;
+    uint8_t oldSREG = SREG;
+ 454:	8f b7       	in	r24, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:345
+
+    // disable interrupts while we read millis_timer_millis or we might get an
+    // inconsistent value (e.g. in the middle of a write to millis_timer_millis)
+    cli();
+ 456:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:346
+    m = millis_timer_millis;
+ 458:	00 91 e9 01 	lds	r16, 0x01E9	; 0x8001e9 <millis_timer_millis>
+ 45c:	10 91 ea 01 	lds	r17, 0x01EA	; 0x8001ea <millis_timer_millis+0x1>
+ 460:	20 91 eb 01 	lds	r18, 0x01EB	; 0x8001eb <millis_timer_millis+0x2>
+ 464:	30 91 ec 01 	lds	r19, 0x01EC	; 0x8001ec <millis_timer_millis+0x3>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:347
+    SREG = oldSREG;
+ 468:	8f bf       	out	0x3f, r24	; 63
+loadNextTagToArray():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:218
+		{
+			responseBuffer[i] = tagEvent[oldestTag].tagID[i];
+		}
+    unsigned long timeSincePressed = millis() - tagEvent[oldestTag].tagTime;//This is the time since last scan.
+ 46a:	80 91 ff 00 	lds	r24, 0x00FF	; 0x8000ff <oldestTag>
+ 46e:	90 e0       	ldi	r25, 0x00	; 0
+ 470:	6a e0       	ldi	r22, 0x0A	; 10
+ 472:	70 e0       	ldi	r23, 0x00	; 0
+ 474:	c3 d4       	rcall	.+2438   	; 0xdfc <__mulhi3>
+ 476:	80 50       	subi	r24, 0x00	; 0
+ 478:	9f 4f       	sbci	r25, 0xFF	; 255
+ 47a:	fc 01       	movw	r30, r24
+ 47c:	86 81       	ldd	r24, Z+6	; 0x06
+ 47e:	97 81       	ldd	r25, Z+7	; 0x07
+ 480:	a0 85       	ldd	r26, Z+8	; 0x08
+ 482:	b1 85       	ldd	r27, Z+9	; 0x09
+ 484:	08 1b       	sub	r16, r24
+ 486:	19 0b       	sbc	r17, r25
+ 488:	2a 0b       	sbc	r18, r26
+ 48a:	3b 0b       	sbc	r19, r27
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:219
+    responseBuffer[6] = timeSincePressed >> 24; //MSB
+ 48c:	30 93 98 00 	sts	0x0098, r19	; 0x800098 <responseBuffer+0x6>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:220
+    responseBuffer[7] = timeSincePressed >> 16; 
+ 490:	20 93 99 00 	sts	0x0099, r18	; 0x800099 <responseBuffer+0x7>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:221
+    responseBuffer[8] = timeSincePressed >> 8;
+ 494:	10 93 9a 00 	sts	0x009A, r17	; 0x80009a <responseBuffer+0x8>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:222
+    responseBuffer[9] = timeSincePressed; //LSB
+ 498:	00 93 9b 00 	sts	0x009B, r16	; 0x80009b <responseBuffer+0x9>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:223
+    if ( ++oldestTag == MAX_TAG_STORAGE ) oldestTag = 0;
+ 49c:	80 91 ff 00 	lds	r24, 0x00FF	; 0x8000ff <oldestTag>
+ 4a0:	8f 5f       	subi	r24, 0xFF	; 255
+ 4a2:	80 93 ff 00 	sts	0x00FF, r24	; 0x8000ff <oldestTag>
+ 4a6:	84 31       	cpi	r24, 0x14	; 20
+ 4a8:	09 f0       	breq	.+2      	; 0x4ac <__LOCK_REGION_LENGTH__+0xac>
+ 4aa:	a3 cf       	rjmp	.-186    	; 0x3f2 <requestEvent()+0x38>
+ 4ac:	10 92 ff 00 	sts	0x00FF, r1	; 0x8000ff <oldestTag>
+ 4b0:	a0 cf       	rjmp	.-192    	; 0x3f2 <requestEvent()+0x38>
+USI_TWI_Space_In_Transmission_Buffer():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:144
+
+// Check if there is space in the transmission buffer.
+unsigned char USI_TWI_Space_In_Transmission_Buffer(void)
+{
+  unsigned char tmpTxHead;
+  tmpTxHead = (TWI_TxHead + 1) & TWI_TX_BUFFER_MASK; // Calculate next buffer index.
+ 4b2:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <TWI_TxHead>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:145
+  return (TWI_TxTail - tmpTxHead) & TWI_TX_BUFFER_MASK; // Return 0 (FALSE) if the transmission buffer is full.
+ 4b6:	80 91 9f 00 	lds	r24, 0x009F	; 0x80009f <TWI_TxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:144
+
+// Check if there is space in the transmission buffer.
+unsigned char USI_TWI_Space_In_Transmission_Buffer(void)
+{
+  unsigned char tmpTxHead;
+  tmpTxHead = (TWI_TxHead + 1) & TWI_TX_BUFFER_MASK; // Calculate next buffer index.
+ 4ba:	4f 5f       	subi	r20, 0xFF	; 255
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:145
+  return (TWI_TxTail - tmpTxHead) & TWI_TX_BUFFER_MASK; // Return 0 (FALSE) if the transmission buffer is full.
+ 4bc:	84 1b       	sub	r24, r20
+ 4be:	8f 70       	andi	r24, 0x0F	; 15
+write():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:519
+    // update amount in buffer
+    BufferLength = BufferIndex;
+  } else { // in slave send mode
+    // don't bother if buffer is full
+    if (!USI_TWI_Space_In_Transmission_Buffer()) {
+ 4c0:	09 f4       	brne	.+2      	; 0x4c4 <__LOCK_REGION_LENGTH__+0xc4>
+ 4c2:	b4 cf       	rjmp	.-152    	; 0x42c <__LOCK_REGION_LENGTH__+0x2c>
+USI_TWI_Transmit_Byte():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:100
+// Puts data in the transmission buffer, Waits if buffer is full.
+void USI_TWI_Transmit_Byte(unsigned char data)
+{
+  unsigned char tmphead;
+
+  tmphead = (TWI_TxHead + 1) & TWI_TX_BUFFER_MASK; // Calculate buffer index.
+ 4c4:	80 91 a0 00 	lds	r24, 0x00A0	; 0x8000a0 <TWI_TxHead>
+ 4c8:	8f 5f       	subi	r24, 0xFF	; 255
+ 4ca:	8f 70       	andi	r24, 0x0F	; 15
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:101
+  while (tmphead == TWI_TxTail)
+ 4cc:	40 91 9f 00 	lds	r20, 0x009F	; 0x80009f <TWI_TxTail>
+ 4d0:	84 17       	cp	r24, r20
+ 4d2:	e1 f3       	breq	.-8      	; 0x4cc <__LOCK_REGION_LENGTH__+0xcc>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:103
+    ;                         // Wait for free space in buffer.
+  TWI_TxBuf[tmphead] = data;    // Store data in buffer.
+ 4d4:	e8 2f       	mov	r30, r24
+ 4d6:	f0 e0       	ldi	r31, 0x00	; 0
+ 4d8:	ee 57       	subi	r30, 0x7E	; 126
+ 4da:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4dc:	50 83       	st	Z, r21
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:104
+  TWI_TxHead         = tmphead; // Store new index.
+ 4de:	80 93 a0 00 	sts	0x00A0, r24	; 0x8000a0 <TWI_TxHead>
+ 4e2:	a4 cf       	rjmp	.-184    	; 0x42c <__LOCK_REGION_LENGTH__+0x2c>
+ 4e4:	30 93 f4 01 	sts	0x01F4, r19	; 0x8001f4 <TwoWire::BufferLength>
+ 4e8:	90 93 f3 01 	sts	0x01F3, r25	; 0x8001f3 <TwoWire::BufferIndex>
+_Z12requestEventv():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:207
+void requestEvent()
+{
+  loadNextTagToArray(); //Send response buffer
+  for (byte x = 0 ; x < responseSize ; x++)
+    Wire.write(responseBuffer[x]);
+}
+ 4ec:	1f 91       	pop	r17
+ 4ee:	0f 91       	pop	r16
+ 4f0:	08 95       	ret
+
+000004f2 <digitalWrite>:
+digitalWrite():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:139
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  uint8_t timer = digitalPinToTimer(pin);
+ 4f2:	90 e0       	ldi	r25, 0x00	; 0
+ 4f4:	fc 01       	movw	r30, r24
+ 4f6:	ea 5b       	subi	r30, 0xBA	; 186
+ 4f8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4fa:	34 91       	lpm	r19, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:140
+  uint8_t bit = digitalPinToBitMask(pin);
+ 4fc:	fc 01       	movw	r30, r24
+ 4fe:	e6 5c       	subi	r30, 0xC6	; 198
+ 500:	ff 4f       	sbci	r31, 0xFF	; 255
+ 502:	24 91       	lpm	r18, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:141
+  uint8_t port = digitalPinToPort(pin);
+ 504:	fc 01       	movw	r30, r24
+ 506:	e2 5d       	subi	r30, 0xD2	; 210
+ 508:	ff 4f       	sbci	r31, 0xFF	; 255
+ 50a:	e4 91       	lpm	r30, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:144
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 50c:	ee 23       	and	r30, r30
+ 50e:	b9 f0       	breq	.+46     	; 0x53e <digitalWrite+0x4c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:148
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 510:	33 23       	and	r19, r19
+ 512:	29 f0       	breq	.+10     	; 0x51e <digitalWrite+0x2c>
+turnOffPWM():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+  #if defined(TCCR0A) && defined(COM0A1)
+    if( timer == TIMER0A){
+ 514:	31 30       	cpi	r19, 0x01	; 1
+ 516:	a1 f4       	brne	.+40     	; 0x540 <digitalWrite+0x4e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:68
+      cbi(TCCR0A, COM0A1);
+ 518:	80 b7       	in	r24, 0x30	; 48
+ 51a:	8f 77       	andi	r24, 0x7F	; 127
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:74
+      //cbi(TCCR0A, COM0A0);
+    } else
+  #endif
+  #if defined(TCCR0A) && defined(COM0B1)
+    if( timer == TIMER0B){
+      cbi(TCCR0A, COM0B1);
+ 51c:	80 bf       	out	0x30, r24	; 48
+digitalWrite():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:150
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 51e:	f0 e0       	ldi	r31, 0x00	; 0
+ 520:	ee 0f       	add	r30, r30
+ 522:	ff 1f       	adc	r31, r31
+ 524:	e8 5d       	subi	r30, 0xD8	; 216
+ 526:	ff 4f       	sbci	r31, 0xFF	; 255
+ 528:	a5 91       	lpm	r26, Z+
+ 52a:	b4 91       	lpm	r27, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:153
+
+  if (val == LOW) {
+    uint8_t oldSREG = SREG;
+ 52c:	8f b7       	in	r24, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:152
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+
+  if (val == LOW) {
+ 52e:	61 11       	cpse	r22, r1
+ 530:	17 c0       	rjmp	.+46     	; 0x560 <digitalWrite+0x6e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:154
+    uint8_t oldSREG = SREG;
+    cli();
+ 532:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:155
+    *out &= ~bit;
+ 534:	ec 91       	ld	r30, X
+ 536:	20 95       	com	r18
+ 538:	2e 23       	and	r18, r30
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:160
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+    *out |= bit;
+ 53a:	2c 93       	st	X, r18
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:161
+    SREG = oldSREG;
+ 53c:	8f bf       	out	0x3f, r24	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:163
+  }
+}
+ 53e:	08 95       	ret
+turnOffPWM():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:73
+      cbi(TCCR0A, COM0A1);
+      //cbi(TCCR0A, COM0A0);
+    } else
+  #endif
+  #if defined(TCCR0A) && defined(COM0B1)
+    if( timer == TIMER0B){
+ 540:	32 30       	cpi	r19, 0x02	; 2
+ 542:	19 f4       	brne	.+6      	; 0x54a <digitalWrite+0x58>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:74
+      cbi(TCCR0A, COM0B1);
+ 544:	80 b7       	in	r24, 0x30	; 48
+ 546:	8f 7d       	andi	r24, 0xDF	; 223
+ 548:	e9 cf       	rjmp	.-46     	; 0x51c <digitalWrite+0x2a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:118
+        GTCCR &= ~(1<<COM1B1);
+        //cbi(GTCCR, COM1B1);
+      } else
+    #endif
+    #if defined(TCCR1A) && defined(COM1A1) // civilized parts
+      if( timer == TIMER1A){
+ 54a:	33 30       	cpi	r19, 0x03	; 3
+ 54c:	21 f4       	brne	.+8      	; 0x556 <digitalWrite+0x64>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:119
+        TCCR1A &= ~(1<<COM1A1);
+ 54e:	8f b5       	in	r24, 0x2f	; 47
+ 550:	8f 77       	andi	r24, 0x7F	; 127
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:126
+      } else
+    #endif
+
+    #if defined(TCCR1A) && defined(COM1B1) // civilized parts
+      if( timer == TIMER1B){
+        TCCR1A &= ~(1<<COM1B1);
+ 552:	8f bd       	out	0x2f, r24	; 47
+ 554:	e4 cf       	rjmp	.-56     	; 0x51e <digitalWrite+0x2c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:125
+        //cbi(TCCR1A, COM1A0);
+      } else
+    #endif
+
+    #if defined(TCCR1A) && defined(COM1B1) // civilized parts
+      if( timer == TIMER1B){
+ 556:	34 30       	cpi	r19, 0x04	; 4
+ 558:	11 f7       	brne	.-60     	; 0x51e <digitalWrite+0x2c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:126
+        TCCR1A &= ~(1<<COM1B1);
+ 55a:	8f b5       	in	r24, 0x2f	; 47
+ 55c:	8f 7d       	andi	r24, 0xDF	; 223
+ 55e:	f9 cf       	rjmp	.-14     	; 0x552 <digitalWrite+0x60>
+digitalWrite():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:159
+    cli();
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+    cli();
+ 560:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:160
+    *out |= bit;
+ 562:	ec 91       	ld	r30, X
+ 564:	2e 2b       	or	r18, r30
+ 566:	e9 cf       	rjmp	.-46     	; 0x53a <digitalWrite+0x48>
+
+00000568 <pinMode>:
+pinMode():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+ 568:	cf 93       	push	r28
+ 56a:	df 93       	push	r29
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:35
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  uint8_t bit = digitalPinToBitMask(pin);
+ 56c:	90 e0       	ldi	r25, 0x00	; 0
+ 56e:	fc 01       	movw	r30, r24
+ 570:	e6 5c       	subi	r30, 0xC6	; 198
+ 572:	ff 4f       	sbci	r31, 0xFF	; 255
+ 574:	24 91       	lpm	r18, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:36
+  uint8_t port = digitalPinToPort(pin);
+ 576:	82 5d       	subi	r24, 0xD2	; 210
+ 578:	9f 4f       	sbci	r25, 0xFF	; 255
+ 57a:	fc 01       	movw	r30, r24
+ 57c:	84 91       	lpm	r24, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:39
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 57e:	88 23       	and	r24, r24
+ 580:	c9 f0       	breq	.+50     	; 0x5b4 <pinMode+0x4c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:41
+
+  reg = portModeRegister(port);
+ 582:	90 e0       	ldi	r25, 0x00	; 0
+ 584:	88 0f       	add	r24, r24
+ 586:	99 1f       	adc	r25, r25
+ 588:	fc 01       	movw	r30, r24
+ 58a:	ee 5d       	subi	r30, 0xDE	; 222
+ 58c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 58e:	a5 91       	lpm	r26, Z+
+ 590:	b4 91       	lpm	r27, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:42
+  out = portOutputRegister(port);
+ 592:	fc 01       	movw	r30, r24
+ 594:	e8 5d       	subi	r30, 0xD8	; 216
+ 596:	ff 4f       	sbci	r31, 0xFF	; 255
+ 598:	c5 91       	lpm	r28, Z+
+ 59a:	d4 91       	lpm	r29, Z
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:44
+
+  if (mode == INPUT) {
+ 59c:	61 11       	cpse	r22, r1
+ 59e:	0d c0       	rjmp	.+26     	; 0x5ba <pinMode+0x52>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:45
+    uint8_t oldSREG = SREG;
+ 5a0:	9f b7       	in	r25, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:46
+                cli();
+ 5a2:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:47
+    *reg &= ~bit;
+ 5a4:	8c 91       	ld	r24, X
+ 5a6:	20 95       	com	r18
+ 5a8:	82 23       	and	r24, r18
+ 5aa:	8c 93       	st	X, r24
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:48
+    *out &= ~bit;
+ 5ac:	88 81       	ld	r24, Y
+ 5ae:	28 23       	and	r18, r24
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:54
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg &= ~bit;
+    *out |= bit;
+ 5b0:	28 83       	st	Y, r18
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:55
+    SREG = oldSREG;
+ 5b2:	9f bf       	out	0x3f, r25	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:62
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg |= bit;
+    SREG = oldSREG;
+  }
+}
+ 5b4:	df 91       	pop	r29
+ 5b6:	cf 91       	pop	r28
+ 5b8:	08 95       	ret
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:50
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg &= ~bit;
+    *out &= ~bit;
+    SREG = oldSREG;
+  } else if (mode == INPUT_PULLUP) {
+ 5ba:	62 30       	cpi	r22, 0x02	; 2
+ 5bc:	51 f4       	brne	.+20     	; 0x5d2 <pinMode+0x6a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:51
+    uint8_t oldSREG = SREG;
+ 5be:	9f b7       	in	r25, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:52
+                cli();
+ 5c0:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:53
+    *reg &= ~bit;
+ 5c2:	3c 91       	ld	r19, X
+ 5c4:	82 2f       	mov	r24, r18
+ 5c6:	80 95       	com	r24
+ 5c8:	83 23       	and	r24, r19
+ 5ca:	8c 93       	st	X, r24
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:54
+    *out |= bit;
+ 5cc:	e8 81       	ld	r30, Y
+ 5ce:	2e 2b       	or	r18, r30
+ 5d0:	ef cf       	rjmp	.-34     	; 0x5b0 <pinMode+0x48>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:57
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 5d2:	8f b7       	in	r24, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:58
+                cli();
+ 5d4:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:59
+    *reg |= bit;
+ 5d6:	ec 91       	ld	r30, X
+ 5d8:	2e 2b       	or	r18, r30
+ 5da:	2c 93       	st	X, r18
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:60
+    SREG = oldSREG;
+ 5dc:	8f bf       	out	0x3f, r24	; 63
+ 5de:	ea cf       	rjmp	.-44     	; 0x5b4 <pinMode+0x4c>
+
+000005e0 <startI2C()>:
+_Z8startI2Cv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:89
+}
+
+// Disable USI for TWI Slave mode.
+void USI_TWI_Slave_Disable()
+{
+  DDR_USI_CL &= ~(1 << PORT_USI_SCL);  // Set SCL as input
+ 5e0:	d4 98       	cbi	0x1a, 4	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:90
+  DDR_USI &= ~(1 << PORT_USI_SDA);  // Set SDA as input
+ 5e2:	d6 98       	cbi	0x1a, 6	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:91
+  USICR = 0x00; // Disable USI
+ 5e4:	1d b8       	out	0x0d, r1	; 13
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:92
+  USISR = 0xF0; // Clear all flags and reset overflow counter
+ 5e6:	80 ef       	ldi	r24, 0xF0	; 240
+ 5e8:	8e b9       	out	0x0e, r24	; 14
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:386
+  begin((uint8_t)address);
+}
+
+void TwoWire::end(void) {
+  USI_TWI_Slave_Disable();
+  DDR_USI_CL &= ~(1 << PIN_USI_SCL); // Enable SCL as input.
+ 5ea:	d4 98       	cbi	0x1a, 4	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:387
+  DDR_USI &= ~(1 << PIN_USI_SDA); // Enable SDA as input.
+ 5ec:	d6 98       	cbi	0x1a, 6	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:388
+  PORT_USI &= ~(1 << PIN_USI_SDA); // Disable pullup on SDA.
+ 5ee:	de 98       	cbi	0x1b, 6	; 27
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:389
+  PORT_USI_CL &= ~(1 << PIN_USI_SCL); // Disable pullup on SCL.
+ 5f0:	dc 98       	cbi	0x1b, 4	; 27
+digitalRead():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:180
+  // "read" should *NEVER* change the behavior of the thing you're using it on.
+  // That's why it's called "read" not "write". As an added bonus, sets the
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+ 5f2:	c8 99       	sbic	0x19, 0	; 25
+ 5f4:	15 c0       	rjmp	.+42     	; 0x620 <startI2C()+0x40>
+begin():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:373
+
+  USI_TWI_Master_Initialise();
+}
+
+void TwoWire::begin(uint8_t address) {
+  BufferIndex = 0;
+ 5f6:	10 92 f3 01 	sts	0x01F3, r1	; 0x8001f3 <TwoWire::BufferIndex>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:374
+  BufferLength = 0;
+ 5fa:	10 92 f4 01 	sts	0x01F4, r1	; 0x8001f4 <TwoWire::BufferLength>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:375
+  transmitting = 0;
+ 5fe:	10 92 9c 00 	sts	0x009C, r1	; 0x80009c <TwoWire::transmitting>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:377
+
+  USI_TWI_Slave_Initialise(address);
+ 602:	84 e1       	ldi	r24, 0x14	; 20
+ 604:	bf de       	rcall	.-642    	; 0x384 <USI_TWI_Slave_Initialise>
+onReceive():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:600
+  // XXX: to be implemented.
+}
+
+// sets function called on slave write
+void TwoWire::onReceive( void (*function)(int) ) {
+  USI_TWI_On_Slave_Receive = function;
+ 606:	89 e1       	ldi	r24, 0x19	; 25
+ 608:	93 e0       	ldi	r25, 0x03	; 3
+ 60a:	90 93 9e 00 	sts	0x009E, r25	; 0x80009e <USI_TWI_On_Slave_Receive+0x1>
+ 60e:	80 93 9d 00 	sts	0x009D, r24	; 0x80009d <USI_TWI_On_Slave_Receive>
+onRequest():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:605
+}
+
+// sets function called on slave read
+void TwoWire::onRequest( void (*function)(void) ) {
+  USI_TWI_On_Slave_Transmit = function;
+ 612:	8d ed       	ldi	r24, 0xDD	; 221
+ 614:	91 e0       	ldi	r25, 0x01	; 1
+ 616:	90 93 a2 00 	sts	0x00A2, r25	; 0x8000a2 <USI_TWI_On_Slave_Transmit+0x1>
+ 61a:	80 93 a1 00 	sts	0x00A1, r24	; 0x8000a1 <USI_TWI_On_Slave_Transmit>
+_Z8startI2Cv():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:261
+    Wire.begin(I2C_ADDRESS_NO_JUMPER); //Force address to I2C_ADDRESS_NO_JUMPER if user has opened the solder jumper
+
+  //The connections to the interrupts are severed when a Wire.begin occurs. So re-declare them.
+  Wire.onReceive(receiveEvent);
+  Wire.onRequest(requestEvent);
+}
+ 61e:	08 95       	ret
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:254
+void startI2C()
+{
+  Wire.end(); //Before we can change addresses we need to stop
+  
+  if (digitalRead(addrPin) == HIGH) //Default is HIGH, the jumper is closed with paste in production
+    Wire.begin(setting_i2c_address); //Start I2C and answer calls using address from EEPROM
+ 620:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <setting_i2c_address>
+begin():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:373
+
+  USI_TWI_Master_Initialise();
+}
+
+void TwoWire::begin(uint8_t address) {
+  BufferIndex = 0;
+ 624:	10 92 f3 01 	sts	0x01F3, r1	; 0x8001f3 <TwoWire::BufferIndex>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:374
+  BufferLength = 0;
+ 628:	10 92 f4 01 	sts	0x01F4, r1	; 0x8001f4 <TwoWire::BufferLength>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/Wire.cpp:375
+  transmitting = 0;
+ 62c:	10 92 9c 00 	sts	0x009C, r1	; 0x80009c <TwoWire::transmitting>
+ 630:	e9 cf       	rjmp	.-46     	; 0x604 <startI2C()+0x24>
+
+00000632 <receiveEvent(int)>:
+_Z12receiveEventi():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:176
+}
+
+
+void receiveEvent(int numberOfBytesReceived)
+{
+  while (Wire.available())
+ 632:	37 dd       	rcall	.-1426   	; 0xa2 <TwoWire::available() [clone .constprop.5]>
+ 634:	89 2b       	or	r24, r25
+ 636:	c1 f0       	breq	.+48     	; 0x668 <receiveEvent(int)+0x36>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:179
+  {
+    //Record bytes to local array
+    byte incoming = Wire.read();
+ 638:	45 dd       	rcall	.-1398   	; 0xc4 <TwoWire::read() [clone .constprop.4]>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:181
+
+    if (incoming == COMMAND_CHANGE_ADDRESS) //Set new I2C address
+ 63a:	87 3c       	cpi	r24, 0xC7	; 199
+ 63c:	d1 f7       	brne	.-12     	; 0x632 <receiveEvent(int)>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:183
+    {
+      if (Wire.available())
+ 63e:	31 dd       	rcall	.-1438   	; 0xa2 <TwoWire::available() [clone .constprop.5]>
+ 640:	89 2b       	or	r24, r25
+ 642:	b9 f3       	breq	.-18     	; 0x632 <receiveEvent(int)>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:185
+      {
+        setting_i2c_address = Wire.read();
+ 644:	3f dd       	rcall	.-1410   	; 0xc4 <TwoWire::read() [clone .constprop.4]>
+ 646:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <setting_i2c_address>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:188
+
+        //Error check
+        if (setting_i2c_address < 0x08 || setting_i2c_address > 0x77)
+ 64a:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <setting_i2c_address>
+ 64e:	88 30       	cpi	r24, 0x08	; 8
+ 650:	80 f3       	brcs	.-32     	; 0x632 <receiveEvent(int)>
+ 652:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <setting_i2c_address>
+ 656:	88 37       	cpi	r24, 0x78	; 120
+ 658:	60 f7       	brcc	.-40     	; 0x632 <receiveEvent(int)>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:191
+          continue; //Command failed. This address is out of bounds.
+
+        EEPROM.write(LOCATION_I2C_ADDRESS, setting_i2c_address);
+ 65a:	60 91 61 00 	lds	r22, 0x0061	; 0x800061 <setting_i2c_address>
+operator=():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/EEPROM/EEPROM.h:61
+    //Assignment/write members.
+    EERef &operator=( const EERef &ref ) { return *this = *ref; }
+    #if  (defined(__AVR_ATtinyX41__) && F_CPU==16000000 && CLOCK_SOURCE==0)
+      EERef &operator=( uint8_t in )       { return safe_eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+    #else
+      EERef &operator=( uint8_t in )       { return eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+ 65e:	81 e0       	ldi	r24, 0x01	; 1
+ 660:	90 e0       	ldi	r25, 0x00	; 0
+ 662:	be d3       	rcall	.+1916   	; 0xde0 <eeprom_write_byte>
+_Z12receiveEventi():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:194
+
+        //Our I2C address may have changed because of user's command
+        startI2C(); //Determine the I2C address we should be using and begin listening on I2C bus
+ 664:	bd df       	rcall	.-134    	; 0x5e0 <startI2C()>
+ 666:	e5 cf       	rjmp	.-54     	; 0x632 <receiveEvent(int)>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:198
+      }
+    }
+  }
+}
+ 668:	08 95       	ret
+
+0000066a <__vector_11>:
+__vector_11():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:308
+      #error "cannot find Millis() timer overflow vector"
+    #endif
+  #else
+    #error "Millis() timer not defined!"
+  #endif
+  {
+ 66a:	1f 92       	push	r1
+ 66c:	0f 92       	push	r0
+ 66e:	0f b6       	in	r0, 0x3f	; 63
+ 670:	0f 92       	push	r0
+ 672:	11 24       	eor	r1, r1
+ 674:	2f 93       	push	r18
+ 676:	3f 93       	push	r19
+ 678:	8f 93       	push	r24
+ 67a:	9f 93       	push	r25
+ 67c:	af 93       	push	r26
+ 67e:	bf 93       	push	r27
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:311
+    // copy these to local variables so they can be stored in registers
+    // (volatile variables must be read from memory on every access)
+    unsigned long m = millis_timer_millis;
+ 680:	80 91 e9 01 	lds	r24, 0x01E9	; 0x8001e9 <millis_timer_millis>
+ 684:	90 91 ea 01 	lds	r25, 0x01EA	; 0x8001ea <millis_timer_millis+0x1>
+ 688:	a0 91 eb 01 	lds	r26, 0x01EB	; 0x8001eb <millis_timer_millis+0x2>
+ 68c:	b0 91 ec 01 	lds	r27, 0x01EC	; 0x8001ec <millis_timer_millis+0x3>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:312
+    unsigned char f = millis_timer_fract;
+ 690:	30 91 e8 01 	lds	r19, 0x01E8	; 0x8001e8 <millis_timer_fract>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:319
+    static unsigned char correct_exact = 0;     // rollover intended
+    if (++correct_exact < CORRECT_EXACT_MANY) {
+      ++f;
+    }
+#endif
+    f += FRACT_INC;
+ 694:	26 e0       	ldi	r18, 0x06	; 6
+ 696:	23 0f       	add	r18, r19
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:321
+
+    if (f >= FRACT_MAX)
+ 698:	2d 37       	cpi	r18, 0x7D	; 125
+ 69a:	68 f1       	brcs	.+90     	; 0x6f6 <__vector_11+0x8c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:323
+    {
+      f -= FRACT_MAX;
+ 69c:	29 e8       	ldi	r18, 0x89	; 137
+ 69e:	23 0f       	add	r18, r19
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:324
+      m += MILLIS_INC + 1;
+ 6a0:	03 96       	adiw	r24, 0x03	; 3
+ 6a2:	a1 1d       	adc	r26, r1
+ 6a4:	b1 1d       	adc	r27, r1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:331
+    else
+    {
+      m += MILLIS_INC;
+    }
+
+    millis_timer_fract = f;
+ 6a6:	20 93 e8 01 	sts	0x01E8, r18	; 0x8001e8 <millis_timer_fract>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:332
+    millis_timer_millis = m;
+ 6aa:	80 93 e9 01 	sts	0x01E9, r24	; 0x8001e9 <millis_timer_millis>
+ 6ae:	90 93 ea 01 	sts	0x01EA, r25	; 0x8001ea <millis_timer_millis+0x1>
+ 6b2:	a0 93 eb 01 	sts	0x01EB, r26	; 0x8001eb <millis_timer_millis+0x2>
+ 6b6:	b0 93 ec 01 	sts	0x01EC, r27	; 0x8001ec <millis_timer_millis+0x3>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:334
+#ifndef CORRECT_EXACT_MICROS
+    millis_timer_overflow_count++;
+ 6ba:	80 91 ed 01 	lds	r24, 0x01ED	; 0x8001ed <millis_timer_overflow_count>
+ 6be:	90 91 ee 01 	lds	r25, 0x01EE	; 0x8001ee <millis_timer_overflow_count+0x1>
+ 6c2:	a0 91 ef 01 	lds	r26, 0x01EF	; 0x8001ef <millis_timer_overflow_count+0x2>
+ 6c6:	b0 91 f0 01 	lds	r27, 0x01F0	; 0x8001f0 <millis_timer_overflow_count+0x3>
+ 6ca:	01 96       	adiw	r24, 0x01	; 1
+ 6cc:	a1 1d       	adc	r26, r1
+ 6ce:	b1 1d       	adc	r27, r1
+ 6d0:	80 93 ed 01 	sts	0x01ED, r24	; 0x8001ed <millis_timer_overflow_count>
+ 6d4:	90 93 ee 01 	sts	0x01EE, r25	; 0x8001ee <millis_timer_overflow_count+0x1>
+ 6d8:	a0 93 ef 01 	sts	0x01EF, r26	; 0x8001ef <millis_timer_overflow_count+0x2>
+ 6dc:	b0 93 f0 01 	sts	0x01F0, r27	; 0x8001f0 <millis_timer_overflow_count+0x3>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:336
+#endif
+  }
+ 6e0:	bf 91       	pop	r27
+ 6e2:	af 91       	pop	r26
+ 6e4:	9f 91       	pop	r25
+ 6e6:	8f 91       	pop	r24
+ 6e8:	3f 91       	pop	r19
+ 6ea:	2f 91       	pop	r18
+ 6ec:	0f 90       	pop	r0
+ 6ee:	0f be       	out	0x3f, r0	; 63
+ 6f0:	0f 90       	pop	r0
+ 6f2:	1f 90       	pop	r1
+ 6f4:	18 95       	reti
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:328
+      f -= FRACT_MAX;
+      m += MILLIS_INC + 1;
+    }
+    else
+    {
+      m += MILLIS_INC;
+ 6f6:	02 96       	adiw	r24, 0x02	; 2
+ 6f8:	a1 1d       	adc	r26, r1
+ 6fa:	b1 1d       	adc	r27, r1
+ 6fc:	d4 cf       	rjmp	.-88     	; 0x6a6 <__vector_11+0x3c>
+
+000006fe <__vector_2>:
+__vector_3():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:227
+  }
+}
+
+#if defined(PCINT0_vect)
+ISR(PCINT0_vect)
+{
+ 6fe:	1f 92       	push	r1
+ 700:	0f 92       	push	r0
+ 702:	0f b6       	in	r0, 0x3f	; 63
+ 704:	0f 92       	push	r0
+ 706:	11 24       	eor	r1, r1
+ 708:	2f 93       	push	r18
+ 70a:	3f 93       	push	r19
+ 70c:	4f 93       	push	r20
+ 70e:	5f 93       	push	r21
+ 710:	6f 93       	push	r22
+ 712:	7f 93       	push	r23
+ 714:	8f 93       	push	r24
+ 716:	9f 93       	push	r25
+ 718:	af 93       	push	r26
+ 71a:	bf 93       	push	r27
+ 71c:	ef 93       	push	r30
+ 71e:	ff 93       	push	r31
+_ZN14SoftwareSerial16handle_interruptEv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:219
+//
+
+/* static */
+inline void SoftwareSerial::handle_interrupt()
+{
+  if (active_object)
+ 720:	e0 91 e7 00 	lds	r30, 0x00E7	; 0x8000e7 <SoftwareSerial::active_object>
+ 724:	f0 91 e8 00 	lds	r31, 0x00E8	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ 728:	30 97       	sbiw	r30, 0x00	; 0
+ 72a:	49 f0       	breq	.+18     	; 0x73e <__vector_2+0x40>
+ 72c:	a6 85       	ldd	r26, Z+14	; 0x0e
+ 72e:	b7 85       	ldd	r27, Z+15	; 0x0f
+ 730:	85 85       	ldd	r24, Z+13	; 0x0d
+recv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:144
+
+  uint8_t d = 0;
+
+  // If RX line is high, then we don't see any start bit
+  // so interrupt is probably not for us
+  if (_inverse_logic ? rx_pin_read() : !rx_pin_read())
+ 732:	96 8d       	ldd	r25, Z+30	; 0x1e
+ 734:	91 ff       	sbrs	r25, 1
+ 736:	14 c0       	rjmp	.+40     	; 0x760 <__vector_2+0x62>
+rx_pin_read():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:209
+#endif
+}
+
+uint8_t SoftwareSerial::rx_pin_read()
+{
+  return *_receivePortRegister & _receiveBitMask;
+ 738:	9c 91       	ld	r25, X
+ 73a:	89 23       	and	r24, r25
+recv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:144
+
+  uint8_t d = 0;
+
+  // If RX line is high, then we don't see any start bit
+  // so interrupt is probably not for us
+  if (_inverse_logic ? rx_pin_read() : !rx_pin_read())
+ 73c:	a1 f4       	brne	.+40     	; 0x766 <__vector_2+0x68>
+__vector_3():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:229
+
+#if defined(PCINT0_vect)
+ISR(PCINT0_vect)
+{
+  SoftwareSerial::handle_interrupt();
+}
+ 73e:	ff 91       	pop	r31
+ 740:	ef 91       	pop	r30
+ 742:	bf 91       	pop	r27
+ 744:	af 91       	pop	r26
+ 746:	9f 91       	pop	r25
+ 748:	8f 91       	pop	r24
+ 74a:	7f 91       	pop	r23
+ 74c:	6f 91       	pop	r22
+ 74e:	5f 91       	pop	r21
+ 750:	4f 91       	pop	r20
+ 752:	3f 91       	pop	r19
+ 754:	2f 91       	pop	r18
+ 756:	0f 90       	pop	r0
+ 758:	0f be       	out	0x3f, r0	; 63
+ 75a:	0f 90       	pop	r0
+ 75c:	1f 90       	pop	r1
+ 75e:	18 95       	reti
+rx_pin_read():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:209
+#endif
+}
+
+uint8_t SoftwareSerial::rx_pin_read()
+{
+  return *_receivePortRegister & _receiveBitMask;
+ 760:	9c 91       	ld	r25, X
+ 762:	89 23       	and	r24, r25
+recv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:144
+
+  uint8_t d = 0;
+
+  // If RX line is high, then we don't see any start bit
+  // so interrupt is probably not for us
+  if (_inverse_logic ? rx_pin_read() : !rx_pin_read())
+ 764:	61 f7       	brne	.-40     	; 0x73e <__vector_2+0x40>
+setRxIntMsk():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:380
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+    else
+      *_pcint_maskreg &= ~_pcint_maskvalue;
+ 766:	a3 89       	ldd	r26, Z+19	; 0x13
+ 768:	b4 89       	ldd	r27, Z+20	; 0x14
+ 76a:	9c 91       	ld	r25, X
+ 76c:	85 89       	ldd	r24, Z+21	; 0x15
+ 76e:	80 95       	com	r24
+ 770:	89 23       	and	r24, r25
+ 772:	8c 93       	st	X, r24
+_delay_loop_2():
+/home/amo/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 774:	86 89       	ldd	r24, Z+22	; 0x16
+ 776:	97 89       	ldd	r25, Z+23	; 0x17
+ 778:	01 97       	sbiw	r24, 0x01	; 1
+ 77a:	f1 f7       	brne	.-4      	; 0x778 <__vector_2+0x7a>
+recv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:158
+    DebugPulse(_DEBUG_PIN2, 1);
+
+    // Read each of the 8 bits
+    for (uint8_t i=8; i > 0; --i)
+    {
+      tunedDelay(_rx_delay_intrabit);
+ 77c:	60 8d       	ldd	r22, Z+24	; 0x18
+ 77e:	71 8d       	ldd	r23, Z+25	; 0x19
+rx_pin_read():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:209
+#endif
+}
+
+uint8_t SoftwareSerial::rx_pin_read()
+{
+  return *_receivePortRegister & _receiveBitMask;
+ 780:	a6 85       	ldd	r26, Z+14	; 0x0e
+ 782:	b7 85       	ldd	r27, Z+15	; 0x0f
+ 784:	55 85       	ldd	r21, Z+13	; 0x0d
+ 786:	38 e0       	ldi	r19, 0x08	; 8
+__vector_3():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:140
+    "push r26 \n\t"
+    "push r27 \n\t"
+    ::);
+#endif
+
+  uint8_t d = 0;
+ 788:	20 e0       	ldi	r18, 0x00	; 0
+_delay_loop_2():
+/home/amo/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 78a:	cb 01       	movw	r24, r22
+ 78c:	01 97       	sbiw	r24, 0x01	; 1
+ 78e:	f1 f7       	brne	.-4      	; 0x78c <__vector_2+0x8e>
+recv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:159
+
+    // Read each of the 8 bits
+    for (uint8_t i=8; i > 0; --i)
+    {
+      tunedDelay(_rx_delay_intrabit);
+      d >>= 1;
+ 790:	82 2f       	mov	r24, r18
+ 792:	90 e0       	ldi	r25, 0x00	; 0
+ 794:	95 95       	asr	r25
+ 796:	87 95       	ror	r24
+ 798:	28 2f       	mov	r18, r24
+rx_pin_read():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:209
+#endif
+}
+
+uint8_t SoftwareSerial::rx_pin_read()
+{
+  return *_receivePortRegister & _receiveBitMask;
+ 79a:	4c 91       	ld	r20, X
+ 79c:	45 23       	and	r20, r21
+recv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:161
+    for (uint8_t i=8; i > 0; --i)
+    {
+      tunedDelay(_rx_delay_intrabit);
+      d >>= 1;
+      DebugPulse(_DEBUG_PIN2, 1);
+      if (rx_pin_read())
+ 79e:	09 f0       	breq	.+2      	; 0x7a2 <__vector_2+0xa4>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:162
+        d |= 0x80;
+ 7a0:	20 68       	ori	r18, 0x80	; 128
+ 7a2:	31 50       	subi	r19, 0x01	; 1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:156
+    // Wait approximately 1/2 of a bit width to "center" the sample
+    tunedDelay(_rx_delay_centering);
+    DebugPulse(_DEBUG_PIN2, 1);
+
+    // Read each of the 8 bits
+    for (uint8_t i=8; i > 0; --i)
+ 7a4:	91 f7       	brne	.-28     	; 0x78a <__vector_2+0x8c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:165
+      DebugPulse(_DEBUG_PIN2, 1);
+      if (rx_pin_read())
+        d |= 0x80;
+    }
+
+    if (_inverse_logic)
+ 7a6:	86 8d       	ldd	r24, Z+30	; 0x1e
+ 7a8:	81 fd       	sbrc	r24, 1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:166
+      d = ~d;
+ 7aa:	20 95       	com	r18
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:169
+
+    // if buffer full, set the overflow flag and return
+    uint8_t next = (_receive_buffer_tail + 1) % _SS_MAX_RX_BUFF;
+ 7ac:	80 91 e6 00 	lds	r24, 0x00E6	; 0x8000e6 <SoftwareSerial::_receive_buffer_tail>
+ 7b0:	90 e0       	ldi	r25, 0x00	; 0
+ 7b2:	01 96       	adiw	r24, 0x01	; 1
+ 7b4:	8f 73       	andi	r24, 0x3F	; 63
+ 7b6:	99 27       	eor	r25, r25
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:170
+    if (next != _receive_buffer_head)
+ 7b8:	30 91 e5 00 	lds	r19, 0x00E5	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+ 7bc:	38 17       	cp	r19, r24
+ 7be:	99 f0       	breq	.+38     	; 0x7e6 <__vector_2+0xe8>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:173
+    {
+      // save new data in buffer: tail points to where byte goes
+      _receive_buffer[_receive_buffer_tail] = d; // save new byte
+ 7c0:	a0 91 e6 00 	lds	r26, 0x00E6	; 0x8000e6 <SoftwareSerial::_receive_buffer_tail>
+ 7c4:	b0 e0       	ldi	r27, 0x00	; 0
+ 7c6:	ab 55       	subi	r26, 0x5B	; 91
+ 7c8:	bf 4f       	sbci	r27, 0xFF	; 255
+ 7ca:	2c 93       	st	X, r18
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:174
+      _receive_buffer_tail = next;
+ 7cc:	80 93 e6 00 	sts	0x00E6, r24	; 0x8000e6 <SoftwareSerial::_receive_buffer_tail>
+_delay_loop_2():
+/home/amo/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ 7d0:	82 8d       	ldd	r24, Z+26	; 0x1a
+ 7d2:	93 8d       	ldd	r25, Z+27	; 0x1b
+ 7d4:	01 97       	sbiw	r24, 0x01	; 1
+ 7d6:	f1 f7       	brne	.-4      	; 0x7d4 <__vector_2+0xd6>
+setRxIntMsk():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:378
+}
+
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+ 7d8:	a3 89       	ldd	r26, Z+19	; 0x13
+ 7da:	b4 89       	ldd	r27, Z+20	; 0x14
+ 7dc:	8c 91       	ld	r24, X
+ 7de:	95 89       	ldd	r25, Z+21	; 0x15
+ 7e0:	89 2b       	or	r24, r25
+ 7e2:	8c 93       	st	X, r24
+ 7e4:	ac cf       	rjmp	.-168    	; 0x73e <__vector_2+0x40>
+recv():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:179
+      _receive_buffer_tail = next;
+    }
+    else
+    {
+      DebugPulse(_DEBUG_PIN1, 1);
+      _buffer_overflow = true;
+ 7e6:	86 8d       	ldd	r24, Z+30	; 0x1e
+ 7e8:	81 60       	ori	r24, 0x01	; 1
+ 7ea:	86 8f       	std	Z+30, r24	; 0x1e
+ 7ec:	f1 cf       	rjmp	.-30     	; 0x7d0 <__vector_2+0xd2>
+
+000007ee <__vector_16>:
+__vector_16():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:207
+/*----------------------------------------------------------
+ Handles all the communication. Is disabled only when waiting
+ for new Start Condition.
+----------------------------------------------------------*/
+ISR(USI_OVERFLOW_VECTOR)
+{
+ 7ee:	1f 92       	push	r1
+ 7f0:	0f 92       	push	r0
+ 7f2:	0f b6       	in	r0, 0x3f	; 63
+ 7f4:	0f 92       	push	r0
+ 7f6:	11 24       	eor	r1, r1
+ 7f8:	2f 93       	push	r18
+ 7fa:	3f 93       	push	r19
+ 7fc:	4f 93       	push	r20
+ 7fe:	5f 93       	push	r21
+ 800:	6f 93       	push	r22
+ 802:	7f 93       	push	r23
+ 804:	8f 93       	push	r24
+ 806:	9f 93       	push	r25
+ 808:	af 93       	push	r26
+ 80a:	bf 93       	push	r27
+ 80c:	cf 93       	push	r28
+ 80e:	ef 93       	push	r30
+ 810:	ff 93       	push	r31
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:212
+  unsigned char tmpRxHead;
+  unsigned char tmpTxTail; // Temporary variables to store volatiles
+  unsigned char tmpUSIDR;
+
+  switch (USI_TWI_Overflow_State) {
+ 812:	80 91 a4 00 	lds	r24, 0x00A4	; 0x8000a4 <USI_TWI_Overflow_State>
+ 816:	82 30       	cpi	r24, 0x02	; 2
+ 818:	09 f4       	brne	.+2      	; 0x81c <__vector_16+0x2e>
+ 81a:	74 c0       	rjmp	.+232    	; 0x904 <__vector_16+0x116>
+ 81c:	b8 f4       	brcc	.+46     	; 0x84c <__vector_16+0x5e>
+ 81e:	88 23       	and	r24, r24
+ 820:	89 f1       	breq	.+98     	; 0x884 <__vector_16+0x96>
+ 822:	81 30       	cpi	r24, 0x01	; 1
+ 824:	09 f4       	brne	.+2      	; 0x828 <__vector_16+0x3a>
+ 826:	54 c0       	rjmp	.+168    	; 0x8d0 <__vector_16+0xe2>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:306
+    {
+      SET_USI_TO_SEND_NACK();
+    }
+    break;
+  }
+}
+ 828:	ff 91       	pop	r31
+ 82a:	ef 91       	pop	r30
+ 82c:	cf 91       	pop	r28
+ 82e:	bf 91       	pop	r27
+ 830:	af 91       	pop	r26
+ 832:	9f 91       	pop	r25
+ 834:	8f 91       	pop	r24
+ 836:	7f 91       	pop	r23
+ 838:	6f 91       	pop	r22
+ 83a:	5f 91       	pop	r21
+ 83c:	4f 91       	pop	r20
+ 83e:	3f 91       	pop	r19
+ 840:	2f 91       	pop	r18
+ 842:	0f 90       	pop	r0
+ 844:	0f be       	out	0x3f, r0	; 63
+ 846:	0f 90       	pop	r0
+ 848:	1f 90       	pop	r1
+ 84a:	18 95       	reti
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:212
+{
+  unsigned char tmpRxHead;
+  unsigned char tmpTxTail; // Temporary variables to store volatiles
+  unsigned char tmpUSIDR;
+
+  switch (USI_TWI_Overflow_State) {
+ 84c:	84 30       	cpi	r24, 0x04	; 4
+ 84e:	09 f4       	brne	.+2      	; 0x852 <__vector_16+0x64>
+ 850:	5f c0       	rjmp	.+190    	; 0x910 <__vector_16+0x122>
+ 852:	b8 f1       	brcs	.+110    	; 0x8c2 <__vector_16+0xd4>
+ 854:	85 30       	cpi	r24, 0x05	; 5
+ 856:	41 f7       	brne	.-48     	; 0x828 <__vector_16+0x3a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:293
+    break;
+
+  // Copy data from USIDR and send ACK. Next USI_SLAVE_REQUEST_DATA
+  case USI_SLAVE_GET_DATA_AND_SEND_ACK:
+    // Put data into Buffer
+    USI_TWI_Overflow_State = USI_SLAVE_REQUEST_DATA;
+ 858:	84 e0       	ldi	r24, 0x04	; 4
+ 85a:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <USI_TWI_Overflow_State>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:294
+    tmpUSIDR              = USIDR; // Not necessary, but prevents warnings
+ 85e:	9f b1       	in	r25, 0x0f	; 15
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:295
+    tmpRxHead = (TWI_RxHead + 1) & TWI_RX_BUFFER_MASK;
+ 860:	80 91 f1 01 	lds	r24, 0x01F1	; 0x8001f1 <TWI_RxHead>
+ 864:	8f 5f       	subi	r24, 0xFF	; 255
+ 866:	8f 70       	andi	r24, 0x0F	; 15
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:296
+    if (TWI_RxTail != tmpRxHead) {
+ 868:	20 91 f2 01 	lds	r18, 0x01F2	; 0x8001f2 <TWI_RxTail>
+ 86c:	28 17       	cp	r18, r24
+ 86e:	09 f4       	brne	.+2      	; 0x872 <__vector_16+0x84>
+ 870:	73 c0       	rjmp	.+230    	; 0x958 <__vector_16+0x16a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:297
+      TWI_RxHead            = tmpRxHead;
+ 872:	80 93 f1 01 	sts	0x01F1, r24	; 0x8001f1 <TWI_RxHead>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:298
+      TWI_RxBuf[TWI_RxHead] = tmpUSIDR;
+ 876:	e0 91 f1 01 	lds	r30, 0x01F1	; 0x8001f1 <TWI_RxHead>
+ 87a:	f0 e0       	ldi	r31, 0x00	; 0
+ 87c:	ee 58       	subi	r30, 0x8E	; 142
+ 87e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 880:	90 83       	st	Z, r25
+ 882:	19 c0       	rjmp	.+50     	; 0x8b6 <__vector_16+0xc8>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:216
+
+  switch (USI_TWI_Overflow_State) {
+  // ---------- Address mode ----------
+  // Check address and send ACK (and next USI_SLAVE_SEND_DATA) if OK, else reset USI.
+  case USI_SLAVE_CHECK_ADDRESS:
+    if ((USIDR == 0) || ((USIDR >> 1) == TWI_slaveAddress)) {
+ 884:	8f b1       	in	r24, 0x0f	; 15
+ 886:	88 23       	and	r24, r24
+ 888:	31 f0       	breq	.+12     	; 0x896 <__vector_16+0xa8>
+ 88a:	8f b1       	in	r24, 0x0f	; 15
+ 88c:	86 95       	lsr	r24
+ 88e:	90 91 a3 00 	lds	r25, 0x00A3	; 0x8000a3 <TWI_slaveAddress>
+ 892:	89 13       	cpse	r24, r25
+ 894:	19 c0       	rjmp	.+50     	; 0x8c8 <__vector_16+0xda>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:217
+      if (USIDR & 0x01) {
+ 896:	78 9b       	sbis	0x0f, 0	; 15
+ 898:	12 c0       	rjmp	.+36     	; 0x8be <__vector_16+0xd0>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:218
+        if (USI_TWI_On_Slave_Transmit) {
+ 89a:	e0 91 a1 00 	lds	r30, 0x00A1	; 0x8000a1 <USI_TWI_On_Slave_Transmit>
+ 89e:	f0 91 a2 00 	lds	r31, 0x00A2	; 0x8000a2 <USI_TWI_On_Slave_Transmit+0x1>
+ 8a2:	30 97       	sbiw	r30, 0x00	; 0
+ 8a4:	29 f0       	breq	.+10     	; 0x8b0 <__vector_16+0xc2>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:220
+          // reset tx buffer and call callback
+          tmpTxTail = TWI_TxHead;
+ 8a6:	80 91 a0 00 	lds	r24, 0x00A0	; 0x8000a0 <TWI_TxHead>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:221
+          TWI_TxTail = tmpTxTail;
+ 8aa:	80 93 9f 00 	sts	0x009F, r24	; 0x80009f <TWI_TxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:222
+          USI_TWI_On_Slave_Transmit();
+ 8ae:	09 95       	icall
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:224
+        }
+        USI_TWI_Overflow_State = USI_SLAVE_SEND_DATA;
+ 8b0:	81 e0       	ldi	r24, 0x01	; 1
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:226
+      } else {
+        USI_TWI_Overflow_State = USI_SLAVE_REQUEST_DATA;
+ 8b2:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <USI_TWI_Overflow_State>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:228
+      }
+      SET_USI_TO_SEND_ACK();
+ 8b6:	1f b8       	out	0x0f, r1	; 15
+ 8b8:	d6 9a       	sbi	0x1a, 6	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:302
+      TWI_RxHead            = tmpRxHead;
+      TWI_RxBuf[TWI_RxHead] = tmpUSIDR;
+      SET_USI_TO_SEND_ACK();
+    } else // If the buffer is full then:
+    {
+      SET_USI_TO_SEND_NACK();
+ 8ba:	8e e7       	ldi	r24, 0x7E	; 126
+ 8bc:	21 c0       	rjmp	.+66     	; 0x900 <__vector_16+0x112>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:226
+          TWI_TxTail = tmpTxTail;
+          USI_TWI_On_Slave_Transmit();
+        }
+        USI_TWI_Overflow_State = USI_SLAVE_SEND_DATA;
+      } else {
+        USI_TWI_Overflow_State = USI_SLAVE_REQUEST_DATA;
+ 8be:	84 e0       	ldi	r24, 0x04	; 4
+ 8c0:	f8 cf       	rjmp	.-16     	; 0x8b2 <__vector_16+0xc4>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:237
+    break;
+
+  // ----- Master write data mode ------
+  // Check reply and goto USI_SLAVE_SEND_DATA if OK, else reset USI.
+  case USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA:
+    if (USIDR) // If NACK, the master does not want more data.
+ 8c2:	8f b1       	in	r24, 0x0f	; 15
+ 8c4:	88 23       	and	r24, r24
+ 8c6:	21 f0       	breq	.+8      	; 0x8d0 <__vector_16+0xe2>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:255
+    if (TWI_TxHead != tmpTxTail) {
+      TWI_TxTail = (TWI_TxTail + 1) & TWI_TX_BUFFER_MASK;
+      USIDR      = TWI_TxBuf[TWI_TxTail];
+    } else // If the buffer is empty then:
+    {
+      SET_USI_TO_TWI_START_CONDITION_MODE();
+ 8c8:	d6 98       	cbi	0x1a, 6	; 26
+ 8ca:	88 ea       	ldi	r24, 0xA8	; 168
+ 8cc:	8d b9       	out	0x0d, r24	; 13
+ 8ce:	17 c0       	rjmp	.+46     	; 0x8fe <__vector_16+0x110>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:249
+  // Copy data from buffer to USIDR and set USI to shift byte. Next USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA
+  /* Falls through. */
+  case USI_SLAVE_SEND_DATA:
+
+    // Get data from Buffer
+    tmpTxTail = TWI_TxTail; // Not necessary, but prevents warnings
+ 8d0:	80 91 9f 00 	lds	r24, 0x009F	; 0x80009f <TWI_TxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:250
+    if (TWI_TxHead != tmpTxTail) {
+ 8d4:	90 91 a0 00 	lds	r25, 0x00A0	; 0x8000a0 <TWI_TxHead>
+ 8d8:	98 17       	cp	r25, r24
+ 8da:	b1 f3       	breq	.-20     	; 0x8c8 <__vector_16+0xda>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:251
+      TWI_TxTail = (TWI_TxTail + 1) & TWI_TX_BUFFER_MASK;
+ 8dc:	80 91 9f 00 	lds	r24, 0x009F	; 0x80009f <TWI_TxTail>
+ 8e0:	8f 5f       	subi	r24, 0xFF	; 255
+ 8e2:	8f 70       	andi	r24, 0x0F	; 15
+ 8e4:	80 93 9f 00 	sts	0x009F, r24	; 0x80009f <TWI_TxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:252
+      USIDR      = TWI_TxBuf[TWI_TxTail];
+ 8e8:	e0 91 9f 00 	lds	r30, 0x009F	; 0x80009f <TWI_TxTail>
+ 8ec:	f0 e0       	ldi	r31, 0x00	; 0
+ 8ee:	ee 57       	subi	r30, 0x7E	; 126
+ 8f0:	ff 4f       	sbci	r31, 0xFF	; 255
+ 8f2:	80 81       	ld	r24, Z
+ 8f4:	8f b9       	out	0x0f, r24	; 15
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:258
+    } else // If the buffer is empty then:
+    {
+      SET_USI_TO_TWI_START_CONDITION_MODE();
+      return;
+    }
+    USI_TWI_Overflow_State = USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA;
+ 8f6:	82 e0       	ldi	r24, 0x02	; 2
+ 8f8:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <USI_TWI_Overflow_State>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:259
+    SET_USI_TO_SEND_DATA();
+ 8fc:	d6 9a       	sbi	0x1a, 6	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:255
+    if (TWI_TxHead != tmpTxTail) {
+      TWI_TxTail = (TWI_TxTail + 1) & TWI_TX_BUFFER_MASK;
+      USIDR      = TWI_TxBuf[TWI_TxTail];
+    } else // If the buffer is empty then:
+    {
+      SET_USI_TO_TWI_START_CONDITION_MODE();
+ 8fe:	80 e7       	ldi	r24, 0x70	; 112
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:302
+      TWI_RxHead            = tmpRxHead;
+      TWI_RxBuf[TWI_RxHead] = tmpUSIDR;
+      SET_USI_TO_SEND_ACK();
+    } else // If the buffer is full then:
+    {
+      SET_USI_TO_SEND_NACK();
+ 900:	8e b9       	out	0x0e, r24	; 14
+ 902:	92 cf       	rjmp	.-220    	; 0x828 <__vector_16+0x3a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:264
+    SET_USI_TO_SEND_DATA();
+    break;
+
+  // Set USI to sample reply from master. Next USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA
+  case USI_SLAVE_REQUEST_REPLY_FROM_SEND_DATA:
+    USI_TWI_Overflow_State = USI_SLAVE_CHECK_REPLY_FROM_SEND_DATA;
+ 904:	83 e0       	ldi	r24, 0x03	; 3
+ 906:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <USI_TWI_Overflow_State>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:265
+    SET_USI_TO_READ_ACK();
+ 90a:	d6 98       	cbi	0x1a, 6	; 26
+ 90c:	1f b8       	out	0x0f, r1	; 15
+ 90e:	d5 cf       	rjmp	.-86     	; 0x8ba <__vector_16+0xcc>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:271
+    break;
+
+  // ----- Master read data mode ------
+  // Set USI to sample data from master. Next USI_SLAVE_GET_DATA_AND_SEND_ACK.
+  case USI_SLAVE_REQUEST_DATA:
+    USI_TWI_Overflow_State = USI_SLAVE_GET_DATA_AND_SEND_ACK;
+ 910:	85 e0       	ldi	r24, 0x05	; 5
+ 912:	80 93 a4 00 	sts	0x00A4, r24	; 0x8000a4 <USI_TWI_Overflow_State>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:272
+    SET_USI_TO_READ_DATA();
+ 916:	d6 98       	cbi	0x1a, 6	; 26
+ 918:	80 e7       	ldi	r24, 0x70	; 112
+ 91a:	8e b9       	out	0x0e, r24	; 14
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:274
+    // call slave receive callback on stop condition
+    if (USI_TWI_On_Slave_Receive) {
+ 91c:	e0 91 9d 00 	lds	r30, 0x009D	; 0x80009d <USI_TWI_On_Slave_Receive>
+ 920:	f0 91 9e 00 	lds	r31, 0x009E	; 0x80009e <USI_TWI_On_Slave_Receive+0x1>
+ 924:	30 97       	sbiw	r30, 0x00	; 0
+ 926:	09 f4       	brne	.+2      	; 0x92a <__vector_16+0x13c>
+ 928:	7f cf       	rjmp	.-258    	; 0x828 <__vector_16+0x3a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:275
+      tmpRxHead = TWI_RxHead;
+ 92a:	c0 91 f1 01 	lds	r28, 0x01F1	; 0x8001f1 <TWI_RxHead>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:276
+      if (TWI_RxTail != tmpRxHead) { // data in receive buffer
+ 92e:	80 91 f2 01 	lds	r24, 0x01F2	; 0x8001f2 <TWI_RxTail>
+ 932:	8c 17       	cp	r24, r28
+ 934:	09 f4       	brne	.+2      	; 0x938 <__vector_16+0x14a>
+ 936:	78 cf       	rjmp	.-272    	; 0x828 <__vector_16+0x3a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:278
+        // check for stop Condition
+        while ((USISR & ((1 << USI_START_COND_INT) | (1 << USIPF) | (0xE << USICNT0))) == 0)
+ 938:	8e b1       	in	r24, 0x0e	; 14
+ 93a:	8e 7a       	andi	r24, 0xAE	; 174
+ 93c:	e9 f3       	breq	.-6      	; 0x938 <__vector_16+0x14a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:281
+          ;// wait for either Start or Stop Condition
+          // cancel after one SCL cycle
+        if (USISR & (1 << USIPF)) { // Stop Condition
+ 93e:	75 9b       	sbis	0x0e, 5	; 14
+ 940:	73 cf       	rjmp	.-282    	; 0x828 <__vector_16+0x3a>
+USI_TWI_Data_In_Receive_Buffer():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:136
+
+// Check if there is data in the receive buffer.
+unsigned char USI_TWI_Data_In_Receive_Buffer(void)
+{
+  unsigned char tmpRxTail;          // Temporary variable to store volatile
+  tmpRxTail = TWI_RxTail;           // Not necessary, but prevents warnings
+ 942:	90 91 f2 01 	lds	r25, 0x01F2	; 0x8001f2 <TWI_RxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:137
+  return (TWI_RxHead - tmpRxTail) & TWI_RX_BUFFER_MASK; // Return 0 (FALSE) if the receive buffer is empty.
+ 946:	80 91 f1 01 	lds	r24, 0x01F1	; 0x8001f1 <TWI_RxHead>
+ 94a:	89 1b       	sub	r24, r25
+ 94c:	8f 70       	andi	r24, 0x0F	; 15
+__vector_16():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:282
+        // check for stop Condition
+        while ((USISR & ((1 << USI_START_COND_INT) | (1 << USIPF) | (0xE << USICNT0))) == 0)
+          ;// wait for either Start or Stop Condition
+          // cancel after one SCL cycle
+        if (USISR & (1 << USIPF)) { // Stop Condition
+          USI_TWI_On_Slave_Receive(USI_TWI_Data_In_Receive_Buffer());
+ 94e:	90 e0       	ldi	r25, 0x00	; 0
+ 950:	09 95       	icall
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:284
+          // reset rx buffer
+          TWI_RxTail = tmpRxHead;
+ 952:	c0 93 f2 01 	sts	0x01F2, r28	; 0x8001f2 <TWI_RxTail>
+ 956:	68 cf       	rjmp	.-304    	; 0x828 <__vector_16+0x3a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:302
+      TWI_RxHead            = tmpRxHead;
+      TWI_RxBuf[TWI_RxHead] = tmpUSIDR;
+      SET_USI_TO_SEND_ACK();
+    } else // If the buffer is full then:
+    {
+      SET_USI_TO_SEND_NACK();
+ 958:	d6 98       	cbi	0x1a, 6	; 26
+ 95a:	af cf       	rjmp	.-162    	; 0x8ba <__vector_16+0xcc>
+
+0000095c <__vector_15>:
+__vector_15():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:165
+ISR(USI_START_VECTOR)
+#elif __ICCAVR__
+#pragma vector = USI_START_VECTOR
+__interrupt void USI_Start_Condition_ISR(void)
+#endif
+{
+ 95c:	1f 92       	push	r1
+ 95e:	0f 92       	push	r0
+ 960:	0f b6       	in	r0, 0x3f	; 63
+ 962:	0f 92       	push	r0
+ 964:	11 24       	eor	r1, r1
+ 966:	2f 93       	push	r18
+ 968:	3f 93       	push	r19
+ 96a:	4f 93       	push	r20
+ 96c:	5f 93       	push	r21
+ 96e:	6f 93       	push	r22
+ 970:	7f 93       	push	r23
+ 972:	8f 93       	push	r24
+ 974:	9f 93       	push	r25
+ 976:	af 93       	push	r26
+ 978:	bf 93       	push	r27
+ 97a:	cf 93       	push	r28
+ 97c:	ef 93       	push	r30
+ 97e:	ff 93       	push	r31
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:169
+  unsigned char tmpPin; // Temporary variable for pin state
+  unsigned char tmpRxHead; // Temporary variable to store volatile
+  // call slave receive callback on repeated start
+  if (USI_TWI_On_Slave_Receive) {
+ 980:	e0 91 9d 00 	lds	r30, 0x009D	; 0x80009d <USI_TWI_On_Slave_Receive>
+ 984:	f0 91 9e 00 	lds	r31, 0x009E	; 0x80009e <USI_TWI_On_Slave_Receive+0x1>
+ 988:	30 97       	sbiw	r30, 0x00	; 0
+ 98a:	81 f0       	breq	.+32     	; 0x9ac <__vector_15+0x50>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:170
+    tmpRxHead = TWI_RxHead;
+ 98c:	c0 91 f1 01 	lds	r28, 0x01F1	; 0x8001f1 <TWI_RxHead>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:171
+    if (TWI_RxTail != tmpRxHead) { // data in receive buffer
+ 990:	80 91 f2 01 	lds	r24, 0x01F2	; 0x8001f2 <TWI_RxTail>
+ 994:	8c 17       	cp	r24, r28
+ 996:	51 f0       	breq	.+20     	; 0x9ac <__vector_15+0x50>
+USI_TWI_Data_In_Receive_Buffer():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:136
+
+// Check if there is data in the receive buffer.
+unsigned char USI_TWI_Data_In_Receive_Buffer(void)
+{
+  unsigned char tmpRxTail;          // Temporary variable to store volatile
+  tmpRxTail = TWI_RxTail;           // Not necessary, but prevents warnings
+ 998:	90 91 f2 01 	lds	r25, 0x01F2	; 0x8001f2 <TWI_RxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:137
+  return (TWI_RxHead - tmpRxTail) & TWI_RX_BUFFER_MASK; // Return 0 (FALSE) if the receive buffer is empty.
+ 99c:	80 91 f1 01 	lds	r24, 0x01F1	; 0x8001f1 <TWI_RxHead>
+ 9a0:	89 1b       	sub	r24, r25
+ 9a2:	8f 70       	andi	r24, 0x0F	; 15
+__vector_15():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:172
+  unsigned char tmpRxHead; // Temporary variable to store volatile
+  // call slave receive callback on repeated start
+  if (USI_TWI_On_Slave_Receive) {
+    tmpRxHead = TWI_RxHead;
+    if (TWI_RxTail != tmpRxHead) { // data in receive buffer
+      USI_TWI_On_Slave_Receive(USI_TWI_Data_In_Receive_Buffer());
+ 9a4:	90 e0       	ldi	r25, 0x00	; 0
+ 9a6:	09 95       	icall
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:174
+      // reset rx buffer
+      TWI_RxTail = tmpRxHead;
+ 9a8:	c0 93 f2 01 	sts	0x01F2, r28	; 0x8001f2 <TWI_RxTail>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:178
+    }
+  }
+
+  USI_TWI_Overflow_State = USI_SLAVE_CHECK_ADDRESS;
+ 9ac:	10 92 a4 00 	sts	0x00A4, r1	; 0x8000a4 <USI_TWI_Overflow_State>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:179
+  DDR_USI &= ~(1 << PORT_USI_SDA); // Set SDA as input
+ 9b0:	d6 98       	cbi	0x1a, 6	; 26
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:180
+  while ((tmpPin = (PIN_USI_CL & (1 << PORT_USI_SCL))) && ((PIN_USI & (1 << PIN_USI_SDA)) == 0))
+ 9b2:	cc 9b       	sbis	0x19, 4	; 25
+ 9b4:	18 c0       	rjmp	.+48     	; 0x9e6 <__vector_15+0x8a>
+ 9b6:	ce 9b       	sbis	0x19, 6	; 25
+ 9b8:	fc cf       	rjmp	.-8      	; 0x9b2 <__vector_15+0x56>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:185
+    ; // Wait for SCL to go low to ensure the "Start Condition" has completed.
+        // If a Stop condition arises then leave the interrupt to prevent waiting forever.
+  if (tmpPin) {
+    // Stop Condition (waiting for next Start Condition)
+    USICR = (1 << USISIE) | (0 << USIOIE) | // Enable Start Condition Interrupt. Disable Overflow Interrupt.
+ 9ba:	88 ea       	ldi	r24, 0xA8	; 168
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:192
+                                            // to first Start Condition (potential failure)
+            (1 << USICS1) | (0 << USICS0) | (0 << USICLK) | // Shift Register Clock Source = External, positive edge
+            (0 << USITC);
+  } else {
+    // really Start Condition (Enable Overflow Interrupt)
+    USICR = (1 << USISIE) | (1 << USIOIE)
+ 9bc:	8d b9       	out	0x0d, r24	; 13
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:198
+            | // Enable Overflow and Start Condition Interrupt. (Keep StartCondInt to detect RESTART)
+            (1 << USIWM1) | (1 << USIWM0) |                 // Set USI in Two-wire mode.
+            (1 << USICS1) | (0 << USICS0) | (0 << USICLK) | // Shift Register Clock Source = External, positive edge
+            (0 << USITC);
+  }
+  USISR = (1 << USI_START_COND_INT) | (1 << USIOIF) | (1 << USIPF) | (1 << USIDC) | // Clear flags
+ 9be:	80 ef       	ldi	r24, 0xF0	; 240
+ 9c0:	8e b9       	out	0x0e, r24	; 14
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:200
+          (0x0 << USICNT0); // Set USI to sample 8 bits i.e. count 16 external pin toggles.
+}
+ 9c2:	ff 91       	pop	r31
+ 9c4:	ef 91       	pop	r30
+ 9c6:	cf 91       	pop	r28
+ 9c8:	bf 91       	pop	r27
+ 9ca:	af 91       	pop	r26
+ 9cc:	9f 91       	pop	r25
+ 9ce:	8f 91       	pop	r24
+ 9d0:	7f 91       	pop	r23
+ 9d2:	6f 91       	pop	r22
+ 9d4:	5f 91       	pop	r21
+ 9d6:	4f 91       	pop	r20
+ 9d8:	3f 91       	pop	r19
+ 9da:	2f 91       	pop	r18
+ 9dc:	0f 90       	pop	r0
+ 9de:	0f be       	out	0x3f, r0	; 63
+ 9e0:	0f 90       	pop	r0
+ 9e2:	1f 90       	pop	r1
+ 9e4:	18 95       	reti
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/Wire/src/USI_TWI_Slave/USI_TWI_Slave.c:192
+                                            // to first Start Condition (potential failure)
+            (1 << USICS1) | (0 << USICS0) | (0 << USICLK) | // Shift Register Clock Source = External, positive edge
+            (0 << USITC);
+  } else {
+    // really Start Condition (Enable Overflow Interrupt)
+    USICR = (1 << USISIE) | (1 << USIOIE)
+ 9e6:	88 ef       	ldi	r24, 0xF8	; 248
+ 9e8:	e9 cf       	rjmp	.-46     	; 0x9bc <__vector_15+0x60>
+
+000009ea <main>:
+main():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1138
+*/
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+    #if defined(WGM01) // if Timer0 has PWM
+      TCCR0A = (1<<WGM01) | (1<<WGM00);
+ 9ea:	83 e0       	ldi	r24, 0x03	; 3
+ 9ec:	80 bf       	out	0x30, r24	; 48
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1141
+    #endif
+    #if defined(TCCR0B) //The x61 has a wacky Timer0!
+      TCCR0B = (MillisTimer_Prescale_Index << CS00);
+ 9ee:	83 bf       	out	0x33, r24	; 51
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1162
+    TCCR1A = 1<<WGM10;
+    TCCR1B = (1<<WGM12) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+ 9f0:	78 94       	sei
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1169
+  #ifndef DISABLEMILLIS
+    // Enable the overflow interrupt (this is the basic system tic-toc for millis)
+    #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+      sbi(TIMSK, TOIE0);
+    #elif defined(TIMSK0) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+      sbi(TIMSK0, TOIE0);
+ 9f2:	99 b7       	in	r25, 0x39	; 57
+ 9f4:	91 60       	ori	r25, 0x01	; 1
+ 9f6:	99 bf       	out	0x39, r25	; 57
+initToneTimerInternal():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:972
+    #elif (TIMER_TO_USE_FOR_TONE == 1 ) && defined(__AVR_ATtinyX7__)
+      TCCR1A = (1<<COM1A1)|(1<<COM1B1)|(1<<WGM10);
+      TCCR1B = (ToneTimer_Prescale_Index << CS10);
+    #elif (TIMER_TO_USE_FOR_TONE == 1) // x4, x8, x313,
+      // Use the Tone Timer for phase correct PWM
+      TCCR1A = (1<<WGM10);
+ 9f8:	91 e0       	ldi	r25, 0x01	; 1
+ 9fa:	9f bd       	out	0x2f, r25	; 47
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:973
+      TCCR1B = (0<<WGM12) | (0<<WGM13) | (ToneTimer_Prescale_Index << CS10); //set the clock
+ 9fc:	8e bd       	out	0x2e, r24	; 46
+main():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1214
+  #if defined( INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER ) && INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER
+    #if defined(ADCSRA)
+      // set a2d prescale factor
+      // ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+      // dude, this is being called on startup. We know that ADCSRA is 0! Why add a RMW cycle?!
+      ADCSRA = (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+ 9fe:	86 e8       	ldi	r24, 0x86	; 134
+ a00:	86 b9       	out	0x06, r24	; 6
+setup():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:72
+byte tempInc[TAG_ID_SIZE]; 
+byte tempTagID[6];
+
+void setup(void)
+{
+  pinMode(addrPin, INPUT_PULLUP); //Default HIGH = 0x13
+ a02:	62 e0       	ldi	r22, 0x02	; 2
+ a04:	80 e0       	ldi	r24, 0x00	; 0
+ a06:	b0 dd       	rcall	.-1184   	; 0x568 <pinMode>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:73
+  pinMode(interruptPin, OUTPUT); //Tied high and goes low when an RFID has been scanned.
+ a08:	61 e0       	ldi	r22, 0x01	; 1
+ a0a:	83 e0       	ldi	r24, 0x03	; 3
+ a0c:	ad dd       	rcall	.-1190   	; 0x568 <pinMode>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:75
+
+  pinMode(rxPin, INPUT); 
+ a0e:	60 e0       	ldi	r22, 0x00	; 0
+ a10:	82 e0       	ldi	r24, 0x02	; 2
+ a12:	aa dd       	rcall	.-1196   	; 0x568 <pinMode>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:76
+  pinMode(txPin, OUTPUT); 
+ a14:	61 e0       	ldi	r22, 0x01	; 1
+ a16:	81 e0       	ldi	r24, 0x01	; 1
+ a18:	a7 dd       	rcall	.-1202   	; 0x568 <pinMode>
+begin():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:304
+// Public methods
+//
+
+void SoftwareSerial::begin(long speed)
+{
+  _rx_delay_centering = _rx_delay_intrabit = _rx_delay_stopbit = _tx_delay = 0;
+ a1a:	10 92 e4 01 	sts	0x01E4, r1	; 0x8001e4 <atSerial+0x1b>
+ a1e:	10 92 e3 01 	sts	0x01E3, r1	; 0x8001e3 <atSerial+0x1a>
+ a22:	10 92 e2 01 	sts	0x01E2, r1	; 0x8001e2 <atSerial+0x19>
+ a26:	10 92 e1 01 	sts	0x01E1, r1	; 0x8001e1 <atSerial+0x18>
+ a2a:	10 92 e0 01 	sts	0x01E0, r1	; 0x8001e0 <atSerial+0x17>
+ a2e:	10 92 df 01 	sts	0x01DF, r1	; 0x8001df <atSerial+0x16>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:314
+  // 12 (gcc 4.8.2) or 13 (gcc 4.3.2) cycles from start bit to first bit,
+  // 15 (gcc 4.8.2) or 16 (gcc 4.3.2) cycles between bits,
+  // 12 (gcc 4.8.2) or 14 (gcc 4.3.2) cycles from last bit to stop bit
+  // These are all close enough to just use 15 cycles, since the inter-bit
+  // timings are the most critical (deviations stack 8 times)
+  _tx_delay = subtract_cap(bit_delay, 15 / 4);
+ a32:	8d ec       	ldi	r24, 0xCD	; 205
+ a34:	90 e0       	ldi	r25, 0x00	; 0
+ a36:	90 93 e6 01 	sts	0x01E6, r25	; 0x8001e6 <atSerial+0x1d>
+ a3a:	80 93 e5 01 	sts	0x01E5, r24	; 0x8001e5 <atSerial+0x1c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:317
+
+  // Only setup rx when we have a valid PCINT for this pin
+  if (digitalPinToPCICR(_receivePin)) {
+ a3e:	90 91 d5 01 	lds	r25, 0x01D5	; 0x8001d5 <atSerial+0xc>
+ a42:	9c 30       	cpi	r25, 0x0C	; 12
+ a44:	c8 f5       	brcc	.+114    	; 0xab8 <main+0xce>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:332
+    // are 17 more cycles until the pin value is read (excluding the
+    // delay in the loop).
+    // We want to have a total delay of 1.5 bit time. Inside the loop,
+    // we already wait for 1 bit time - 23 cycles, so here we wait for
+    // 0.5 bit time - (71 + 18 - 22) cycles.
+    _rx_delay_centering = subtract_cap(bit_delay / 2, (4 + 4 + 75 + 17 - 23) / 4);
+ a46:	25 e5       	ldi	r18, 0x55	; 85
+ a48:	30 e0       	ldi	r19, 0x00	; 0
+ a4a:	30 93 e0 01 	sts	0x01E0, r19	; 0x8001e0 <atSerial+0x17>
+ a4e:	20 93 df 01 	sts	0x01DF, r18	; 0x8001df <atSerial+0x16>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:335
+
+    // There are 23 cycles in each loop iteration (excluding the delay)
+    _rx_delay_intrabit = subtract_cap(bit_delay, 23 / 4);
+ a52:	2b ec       	ldi	r18, 0xCB	; 203
+ a54:	30 e0       	ldi	r19, 0x00	; 0
+ a56:	30 93 e2 01 	sts	0x01E2, r19	; 0x8001e2 <atSerial+0x19>
+ a5a:	20 93 e1 01 	sts	0x01E1, r18	; 0x8001e1 <atSerial+0x18>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:344
+    // mask is enabled again (which _must_ happen during the stopbit).
+    // This delay aims at 3/4 of a bit time, meaning the end of the
+    // delay will be at 1/4th of the stopbit. This allows some extra
+    // time for ISR cleanup, which makes 115200 baud at 16Mhz work more
+    // reliably
+    _rx_delay_stopbit = subtract_cap(bit_delay * 3 / 4, (37 + 11) / 4);
+ a5e:	20 e9       	ldi	r18, 0x90	; 144
+ a60:	30 e0       	ldi	r19, 0x00	; 0
+ a62:	30 93 e4 01 	sts	0x01E4, r19	; 0x8001e4 <atSerial+0x1b>
+ a66:	20 93 e3 01 	sts	0x01E3, r18	; 0x8001e3 <atSerial+0x1a>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:358
+
+
+    // Enable the PCINT for the entire port here, but never disable it
+    // (others might also need it, so we disable the interrupt by using
+    // the per-pin PCMSK register).
+    *digitalPinToPCICR(_receivePin) |= _BV(digitalPinToPCICRbit(_receivePin));
+ a6a:	8b b7       	in	r24, 0x3b	; 59
+main():
+ a6c:	20 e1       	ldi	r18, 0x10	; 16
+begin():
+ a6e:	98 30       	cpi	r25, 0x08	; 8
+ a70:	08 f0       	brcs	.+2      	; 0xa74 <main+0x8a>
+main():
+ a72:	20 e2       	ldi	r18, 0x20	; 32
+begin():
+ a74:	82 2b       	or	r24, r18
+ a76:	8b bf       	out	0x3b, r24	; 59
+main():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:361
+    // Precalculate the pcint mask register and value, so setRxIntMask
+    // can be used inside the ISR without costing too much time.
+    _pcint_maskreg = digitalPinToPCMSK(_receivePin);
+ a78:	22 e3       	ldi	r18, 0x32	; 50
+ a7a:	30 e0       	ldi	r19, 0x00	; 0
+begin():
+ a7c:	98 30       	cpi	r25, 0x08	; 8
+ a7e:	30 f0       	brcs	.+12     	; 0xa8c <main+0xa2>
+main():
+ a80:	20 e4       	ldi	r18, 0x40	; 64
+ a82:	30 e0       	ldi	r19, 0x00	; 0
+begin():
+ a84:	9b 30       	cpi	r25, 0x0B	; 11
+ a86:	10 f0       	brcs	.+4      	; 0xa8c <main+0xa2>
+main():
+ a88:	30 e0       	ldi	r19, 0x00	; 0
+ a8a:	20 e0       	ldi	r18, 0x00	; 0
+begin():
+ a8c:	30 93 dd 01 	sts	0x01DD, r19	; 0x8001dd <atSerial+0x14>
+ a90:	20 93 dc 01 	sts	0x01DC, r18	; 0x8001dc <atSerial+0x13>
+ a94:	49 2f       	mov	r20, r25
+ a96:	50 e0       	ldi	r21, 0x00	; 0
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:362
+    _pcint_maskvalue = _BV(digitalPinToPCMSKbit(_receivePin));
+ a98:	98 30       	cpi	r25, 0x08	; 8
+ a9a:	08 f0       	brcs	.+2      	; 0xa9e <main+0xb4>
+ a9c:	f3 c0       	rjmp	.+486    	; 0xc84 <main+0x29a>
+ a9e:	81 e0       	ldi	r24, 0x01	; 1
+ aa0:	01 c0       	rjmp	.+2      	; 0xaa4 <main+0xba>
+ aa2:	88 0f       	add	r24, r24
+ aa4:	9a 95       	dec	r25
+ aa6:	ea f7       	brpl	.-6      	; 0xaa2 <main+0xb8>
+ aa8:	80 93 de 01 	sts	0x01DE, r24	; 0x8001de <atSerial+0x15>
+_delay_loop_2():
+/home/amo/.arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include/util/delay_basic.h:110
+ aac:	80 91 e5 01 	lds	r24, 0x01E5	; 0x8001e5 <atSerial+0x1c>
+ ab0:	90 91 e6 01 	lds	r25, 0x01E6	; 0x8001e6 <atSerial+0x1d>
+ ab4:	01 97       	sbiw	r24, 0x01	; 1
+ ab6:	f1 f7       	brne	.-4      	; 0xab4 <main+0xca>
+listen():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:87
+
+// This function sets the current object as the "listening"
+// one and returns true if it replaces another
+bool SoftwareSerial::listen()
+{
+  if (!_rx_delay_stopbit)
+ ab8:	80 91 e3 01 	lds	r24, 0x01E3	; 0x8001e3 <atSerial+0x1a>
+ abc:	90 91 e4 01 	lds	r25, 0x01E4	; 0x8001e4 <atSerial+0x1b>
+ ac0:	89 2b       	or	r24, r25
+ ac2:	49 f1       	breq	.+82     	; 0xb16 <main+0x12c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:90
+    return false;
+
+  if (active_object != this)
+ ac4:	e0 91 e7 00 	lds	r30, 0x00E7	; 0x8000e7 <SoftwareSerial::active_object>
+ ac8:	f0 91 e8 00 	lds	r31, 0x00E8	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ acc:	81 e0       	ldi	r24, 0x01	; 1
+ ace:	e9 3c       	cpi	r30, 0xC9	; 201
+ ad0:	f8 07       	cpc	r31, r24
+ ad2:	09 f1       	breq	.+66     	; 0xb16 <main+0x12c>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:92
+  {
+    if (active_object)
+ ad4:	30 97       	sbiw	r30, 0x00	; 0
+ ad6:	39 f0       	breq	.+14     	; 0xae6 <main+0xfc>
+setRxIntMsk():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:380
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+    else
+      *_pcint_maskreg &= ~_pcint_maskvalue;
+ ad8:	a3 89       	ldd	r26, Z+19	; 0x13
+ ada:	b4 89       	ldd	r27, Z+20	; 0x14
+ adc:	9c 91       	ld	r25, X
+ ade:	85 89       	ldd	r24, Z+21	; 0x15
+ ae0:	80 95       	com	r24
+ ae2:	89 23       	and	r24, r25
+ ae4:	8c 93       	st	X, r24
+listen():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:95
+  if (active_object != this)
+  {
+    if (active_object)
+      active_object->stopListening();
+
+    _buffer_overflow = false;
+ ae6:	80 91 e7 01 	lds	r24, 0x01E7	; 0x8001e7 <atSerial+0x1e>
+ aea:	8e 7f       	andi	r24, 0xFE	; 254
+ aec:	80 93 e7 01 	sts	0x01E7, r24	; 0x8001e7 <atSerial+0x1e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:96
+    _receive_buffer_head = _receive_buffer_tail = 0;
+ af0:	10 92 e6 00 	sts	0x00E6, r1	; 0x8000e6 <SoftwareSerial::_receive_buffer_tail>
+ af4:	10 92 e5 00 	sts	0x00E5, r1	; 0x8000e5 <SoftwareSerial::_receive_buffer_head>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:97
+    active_object = this;
+ af8:	89 ec       	ldi	r24, 0xC9	; 201
+ afa:	91 e0       	ldi	r25, 0x01	; 1
+ afc:	90 93 e8 00 	sts	0x00E8, r25	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ b00:	80 93 e7 00 	sts	0x00E7, r24	; 0x8000e7 <SoftwareSerial::active_object>
+setRxIntMsk():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:378
+}
+
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+ b04:	e0 91 dc 01 	lds	r30, 0x01DC	; 0x8001dc <atSerial+0x13>
+ b08:	f0 91 dd 01 	lds	r31, 0x01DD	; 0x8001dd <atSerial+0x14>
+ b0c:	80 81       	ld	r24, Z
+ b0e:	90 91 de 01 	lds	r25, 0x01DE	; 0x8001de <atSerial+0x15>
+ b12:	89 2b       	or	r24, r25
+ b14:	80 83       	st	Z, r24
+setup():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:80
+	atSerial.begin(9600); //Baud requirement for the ID Module
+
+  //Disable ADC
+  ADCSRA = 0;
+ b16:	16 b8       	out	0x06, r1	; 6
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:82
+  //Disble Brown-Out Detect
+  MCUCR = bit (BODS) | bit (BODSE);
+ b18:	84 e8       	ldi	r24, 0x84	; 132
+ b1a:	85 bf       	out	0x35, r24	; 53
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:83
+  MCUCR = bit (BODS);
+ b1c:	80 e8       	ldi	r24, 0x80	; 128
+ b1e:	85 bf       	out	0x35, r24	; 53
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:87
+
+  //Power down various bits of hardware to lower power usage
+  //set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+  set_sleep_mode(SLEEP_MODE_IDLE);
+ b20:	85 b7       	in	r24, 0x35	; 53
+ b22:	87 7e       	andi	r24, 0xE7	; 231
+ b24:	85 bf       	out	0x35, r24	; 53
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:88
+  sleep_enable();
+ b26:	85 b7       	in	r24, 0x35	; 53
+ b28:	80 62       	ori	r24, 0x20	; 32
+ b2a:	85 bf       	out	0x35, r24	; 53
+operator*():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/EEPROM/EEPROM.h:53
+
+    EERef( const int index )
+        : index( index )                 {}
+
+    //Access/read members.
+    uint8_t operator*() const            { return eeprom_read_byte( (uint8_t*) index ); }
+ b2c:	81 e0       	ldi	r24, 0x01	; 1
+ b2e:	90 e0       	ldi	r25, 0x00	; 0
+ b30:	4f d1       	rcall	.+670    	; 0xdd0 <eeprom_read_byte>
+readSystemSettings():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:240
+//Reads the current system settings from EEPROM
+//If anything looks weird, reset setting to default value
+void readSystemSettings(void)
+{
+  //Read what I2C address we should use
+  setting_i2c_address = EEPROM.read(LOCATION_I2C_ADDRESS);
+ b32:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <setting_i2c_address>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:241
+  if (setting_i2c_address == 255)
+ b36:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <setting_i2c_address>
+ b3a:	8f 3f       	cpi	r24, 0xFF	; 255
+ b3c:	41 f4       	brne	.+16     	; 0xb4e <main+0x164>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:243
+  {
+    setting_i2c_address = I2C_ADDRESS_DEFAULT; //By default, we listen for I2C_ADDRESS_DEFAULT
+ b3e:	83 e1       	ldi	r24, 0x13	; 19
+ b40:	80 93 61 00 	sts	0x0061, r24	; 0x800061 <setting_i2c_address>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:244
+    EEPROM.write(LOCATION_I2C_ADDRESS, setting_i2c_address);
+ b44:	60 91 61 00 	lds	r22, 0x0061	; 0x800061 <setting_i2c_address>
+operator=():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/EEPROM/EEPROM.h:61
+    //Assignment/write members.
+    EERef &operator=( const EERef &ref ) { return *this = *ref; }
+    #if  (defined(__AVR_ATtinyX41__) && F_CPU==16000000 && CLOCK_SOURCE==0)
+      EERef &operator=( uint8_t in )       { return safe_eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+    #else
+      EERef &operator=( uint8_t in )       { return eeprom_write_byte( (uint8_t*) index, in ), *this;  }
+ b48:	81 e0       	ldi	r24, 0x01	; 1
+ b4a:	90 e0       	ldi	r25, 0x00	; 0
+ b4c:	49 d1       	rcall	.+658    	; 0xde0 <eeprom_write_byte>
+setup():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:92
+  set_sleep_mode(SLEEP_MODE_IDLE);
+  sleep_enable();
+
+  readSystemSettings(); //Load all system settings from EEPROM
+
+  startI2C(); //Determine the I2C address we should be using and begin listening on I2C bus
+ b4e:	48 dd       	rcall	.-1392   	; 0x5e0 <startI2C()>
+ b50:	ce ef       	ldi	r28, 0xFE	; 254
+ b52:	d0 e0       	ldi	r29, 0x00	; 0
+loop():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:98
+}
+
+void loop(void)
+{
+  //Waiting for new RFID cards/capsules to be scanned. 
+  if( atSerial.available() )
+ b54:	89 ec       	ldi	r24, 0xC9	; 201
+ b56:	91 e0       	ldi	r25, 0x01	; 1
+ b58:	dd db       	rcall	.-2118   	; 0x314 <SoftwareSerial::available()>
+ b5a:	89 2b       	or	r24, r25
+ b5c:	09 f4       	brne	.+2      	; 0xb60 <main+0x176>
+ b5e:	b6 c0       	rjmp	.+364    	; 0xccc <main+0x2e2>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:100
+	{
+		while( atSerial.available() ) 
+ b60:	89 ec       	ldi	r24, 0xC9	; 201
+ b62:	91 e0       	ldi	r25, 0x01	; 1
+ b64:	d7 db       	rcall	.-2130   	; 0x314 <SoftwareSerial::available()>
+ b66:	89 2b       	or	r24, r25
+ b68:	09 f4       	brne	.+2      	; 0xb6c <main+0x182>
+ b6a:	a7 c0       	rjmp	.+334    	; 0xcba <main+0x2d0>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:102
+		{	
+			if( atSerial.read() != startByte ) break; 
+ b6c:	89 ec       	ldi	r24, 0xC9	; 201
+ b6e:	91 e0       	ldi	r25, 0x01	; 1
+ b70:	e8 db       	rcall	.-2096   	; 0x342 <SoftwareSerial::read()>
+ b72:	02 97       	sbiw	r24, 0x02	; 2
+ b74:	09 f0       	breq	.+2      	; 0xb78 <main+0x18e>
+ b76:	a1 c0       	rjmp	.+322    	; 0xcba <main+0x2d0>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:103
+			delay(11);//Necessary to not overwhelm the ID-XXLA module baud rate.
+ b78:	f3 da       	rcall	.-2586   	; 0x160 <delay.constprop.0>
+ b7a:	8f ee       	ldi	r24, 0xEF	; 239
+ b7c:	e8 2e       	mov	r14, r24
+ b7e:	80 e0       	ldi	r24, 0x00	; 0
+ b80:	f8 2e       	mov	r15, r24
+ b82:	67 01       	movw	r12, r14
+getTagID():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:128
+bool getTagID() 
+{
+	int j = 0; 
+	for( int i = 0; i < TAG_ID_SIZE - 1 ; i ++ ) //TAG_ID_SIZE IS 16, but an index is numerically one less (0-15).
+	{
+		tempInc[i] = atSerial.read(); 	
+ b84:	89 ec       	ldi	r24, 0xC9	; 201
+ b86:	91 e0       	ldi	r25, 0x01	; 1
+ b88:	dc db       	rcall	.-2120   	; 0x342 <SoftwareSerial::read()>
+ b8a:	f6 01       	movw	r30, r12
+ b8c:	81 93       	st	Z+, r24
+ b8e:	6f 01       	movw	r12, r30
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:129
+		delay(11); //The delay keeps the read commands from outpacing the baud rate of 9600.
+ b90:	e7 da       	rcall	.-2610   	; 0x160 <delay.constprop.0>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:126
+// are converted to the decimal equivalent values and saved into another temporaray array. The value
+// is validated and then passed into the final array ready to be sent on the I2C bus.
+bool getTagID() 
+{
+	int j = 0; 
+	for( int i = 0; i < TAG_ID_SIZE - 1 ; i ++ ) //TAG_ID_SIZE IS 16, but an index is numerically one less (0-15).
+ b92:	cc 15       	cp	r28, r12
+ b94:	dd 05       	cpc	r29, r13
+ b96:	b1 f7       	brne	.-20     	; 0xb84 <main+0x19a>
+main():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:125
+// and the individual elements of the temporary array are passed to another function where they 
+// are converted to the decimal equivalent values and saved into another temporaray array. The value
+// is validated and then passed into the final array ready to be sent on the I2C bus.
+bool getTagID() 
+{
+	int j = 0; 
+ b98:	50 e0       	ldi	r21, 0x00	; 0
+ b9a:	40 e0       	ldi	r20, 0x00	; 0
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:131
+	for( int i = 0; i < TAG_ID_SIZE - 1 ; i ++ ) //TAG_ID_SIZE IS 16, but an index is numerically one less (0-15).
+	{
+		tempInc[i] = atSerial.read(); 	
+		delay(11); //The delay keeps the read commands from outpacing the baud rate of 9600.
+	}
+	for( int i = 0; i < TAG_ID_SIZE - 1; i ++ ) 
+ b9c:	30 e0       	ldi	r19, 0x00	; 0
+ b9e:	20 e0       	ldi	r18, 0x00	; 0
+getTagID():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:133
+	{
+		if( i % 2 == 0 && i !=0 ) j++; 
+ ba0:	b9 01       	movw	r22, r18
+ ba2:	61 70       	andi	r22, 0x01	; 1
+ ba4:	77 27       	eor	r23, r23
+ ba6:	20 fd       	sbrc	r18, 0
+ ba8:	05 c0       	rjmp	.+10     	; 0xbb4 <main+0x1ca>
+ baa:	21 15       	cp	r18, r1
+ bac:	31 05       	cpc	r19, r1
+ bae:	11 f0       	breq	.+4      	; 0xbb4 <main+0x1ca>
+ bb0:	4f 5f       	subi	r20, 0xFF	; 255
+ bb2:	5f 4f       	sbci	r21, 0xFF	; 255
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:134
+		if( tempInc[i] == endByte ) break;
+ bb4:	f7 01       	movw	r30, r14
+ bb6:	91 91       	ld	r25, Z+
+ bb8:	7f 01       	movw	r14, r30
+ bba:	93 30       	cpi	r25, 0x03	; 3
+ bbc:	11 f1       	breq	.+68     	; 0xc02 <main+0x218>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:135
+		else if( i > 10 && (tempInc[i] == cRHex || tempInc[i] == lFHex)) continue; //Not part of the TAG ID
+ bbe:	2b 30       	cpi	r18, 0x0B	; 11
+ bc0:	31 05       	cpc	r19, r1
+ bc2:	24 f0       	brlt	.+8      	; 0xbcc <main+0x1e2>
+ bc4:	9d 30       	cpi	r25, 0x0D	; 13
+ bc6:	c1 f0       	breq	.+48     	; 0xbf8 <main+0x20e>
+ bc8:	9a 30       	cpi	r25, 0x0A	; 10
+ bca:	b1 f0       	breq	.+44     	; 0xbf8 <main+0x20e>
+ bcc:	80 ed       	ldi	r24, 0xD0	; 208
+ bce:	89 0f       	add	r24, r25
+ bd0:	fa 01       	movw	r30, r20
+ bd2:	e7 51       	subi	r30, 0x17	; 23
+ bd4:	ff 4f       	sbci	r31, 0xFF	; 255
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:136
+		else if( i % 2 == 0 ) tempTagID[j] = convertAscii(tempInc[i]) << 4; //MSB
+ bd6:	67 2b       	or	r22, r23
+ bd8:	09 f0       	breq	.+2      	; 0xbdc <main+0x1f2>
+ bda:	60 c0       	rjmp	.+192    	; 0xc9c <main+0x2b2>
+convertAscii():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:157
+// Changes Ascii Values to their decimal representation by subtracting a fixed
+// number, best understood by taking a look at an Ascii table. For example: we're 
+// changing an Ascii zero, to an actual zero: ASCII "0" = 48 decimal.
+byte convertAscii(byte asciiVal)
+{
+	if( asciiVal >= '0' && asciiVal <= '9' ) return asciiVal -= 48; 
+ bdc:	8a 30       	cpi	r24, 0x0A	; 10
+ bde:	38 f0       	brcs	.+14     	; 0xbee <main+0x204>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:158
+	else if( asciiVal >= 'A' && asciiVal <= 'F' ) return asciiVal -= 55; 
+ be0:	8f eb       	ldi	r24, 0xBF	; 191
+ be2:	89 0f       	add	r24, r25
+ be4:	86 30       	cpi	r24, 0x06	; 6
+ be6:	08 f0       	brcs	.+2      	; 0xbea <main+0x200>
+ be8:	57 c0       	rjmp	.+174    	; 0xc98 <main+0x2ae>
+ bea:	89 ec       	ldi	r24, 0xC9	; 201
+ bec:	89 0f       	add	r24, r25
+getTagID():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:136
+	for( int i = 0; i < TAG_ID_SIZE - 1; i ++ ) 
+	{
+		if( i % 2 == 0 && i !=0 ) j++; 
+		if( tempInc[i] == endByte ) break;
+		else if( i > 10 && (tempInc[i] == cRHex || tempInc[i] == lFHex)) continue; //Not part of the TAG ID
+		else if( i % 2 == 0 ) tempTagID[j] = convertAscii(tempInc[i]) << 4; //MSB
+ bee:	98 2f       	mov	r25, r24
+ bf0:	92 95       	swap	r25
+ bf2:	90 7f       	andi	r25, 0xF0	; 240
+ bf4:	90 83       	st	Z, r25
+ bf6:	18 2f       	mov	r17, r24
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:131
+	for( int i = 0; i < TAG_ID_SIZE - 1 ; i ++ ) //TAG_ID_SIZE IS 16, but an index is numerically one less (0-15).
+	{
+		tempInc[i] = atSerial.read(); 	
+		delay(11); //The delay keeps the read commands from outpacing the baud rate of 9600.
+	}
+	for( int i = 0; i < TAG_ID_SIZE - 1; i ++ ) 
+ bf8:	2f 5f       	subi	r18, 0xFF	; 255
+ bfa:	3f 4f       	sbci	r19, 0xFF	; 255
+ bfc:	2f 30       	cpi	r18, 0x0F	; 15
+ bfe:	31 05       	cpc	r19, r1
+ c00:	79 f6       	brne	.-98     	; 0xba0 <main+0x1b6>
+checkSum():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:164
+}
+
+//Double checking checksum value given by the tag module just in case something went wrong along the way.
+bool checkSum(byte* uncheckedTag)
+{
+	byte exOr = uncheckedTag[0]; 
+ c02:	80 91 e9 00 	lds	r24, 0x00E9	; 0x8000e9 <tempTagID>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:167
+	for( int i = 1; i < 5 ; i ++)
+	{
+		exOr ^= uncheckedTag[i];
+ c06:	90 91 ea 00 	lds	r25, 0x00EA	; 0x8000ea <tempTagID+0x1>
+ c0a:	89 27       	eor	r24, r25
+ c0c:	90 91 eb 00 	lds	r25, 0x00EB	; 0x8000eb <tempTagID+0x2>
+ c10:	89 27       	eor	r24, r25
+ c12:	90 91 ec 00 	lds	r25, 0x00EC	; 0x8000ec <tempTagID+0x3>
+ c16:	89 27       	eor	r24, r25
+ c18:	90 91 ed 00 	lds	r25, 0x00ED	; 0x8000ed <tempTagID+0x4>
+ c1c:	89 27       	eor	r24, r25
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:169
+	}
+	if( exOr == uncheckedTag[5] ) return true; 
+ c1e:	90 91 ee 00 	lds	r25, 0x00EE	; 0x8000ee <tempTagID+0x5>
+ c22:	98 13       	cpse	r25, r24
+ c24:	9d cf       	rjmp	.-198    	; 0xb60 <main+0x176>
+ c26:	a9 ee       	ldi	r26, 0xE9	; 233
+ c28:	b0 e0       	ldi	r27, 0x00	; 0
+main():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:143
+	}
+	j=0;
+
+	if( checkSum(tempTagID) )
+	{
+		for( int i = 0; i < 6; i++ )
+ c2a:	30 e0       	ldi	r19, 0x00	; 0
+ c2c:	20 e0       	ldi	r18, 0x00	; 0
+getTagID():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:145
+		{
+			tagEvent[newestTag].tagID[i] = tempTagID[i];
+ c2e:	80 91 c8 01 	lds	r24, 0x01C8	; 0x8001c8 <newestTag>
+ c32:	4d 91       	ld	r20, X+
+ c34:	90 e0       	ldi	r25, 0x00	; 0
+ c36:	6a e0       	ldi	r22, 0x0A	; 10
+ c38:	70 e0       	ldi	r23, 0x00	; 0
+ c3a:	e0 d0       	rcall	.+448    	; 0xdfc <__mulhi3>
+ c3c:	80 50       	subi	r24, 0x00	; 0
+ c3e:	9f 4f       	sbci	r25, 0xFF	; 255
+ c40:	fc 01       	movw	r30, r24
+ c42:	e2 0f       	add	r30, r18
+ c44:	f3 1f       	adc	r31, r19
+ c46:	40 83       	st	Z, r20
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:143
+	}
+	j=0;
+
+	if( checkSum(tempTagID) )
+	{
+		for( int i = 0; i < 6; i++ )
+ c48:	2f 5f       	subi	r18, 0xFF	; 255
+ c4a:	3f 4f       	sbci	r19, 0xFF	; 255
+ c4c:	26 30       	cpi	r18, 0x06	; 6
+ c4e:	31 05       	cpc	r19, r1
+ c50:	71 f7       	brne	.-36     	; 0xc2e <main+0x244>
+loop():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:104
+	{
+		while( atSerial.available() ) 
+		{	
+			if( atSerial.read() != startByte ) break; 
+			delay(11);//Necessary to not overwhelm the ID-XXLA module baud rate.
+			if( getTagID() ) tagEvent[newestTag].tagTime = millis(); //Get the Tag ID, and verify its' contents, then grab time. 
+ c52:	80 91 c8 01 	lds	r24, 0x01C8	; 0x8001c8 <newestTag>
+millis():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:341
+  }
+
+  unsigned long millis()
+  {
+    unsigned long m;
+    uint8_t oldSREG = SREG;
+ c56:	9f b7       	in	r25, 0x3f	; 63
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:345
+
+    // disable interrupts while we read millis_timer_millis or we might get an
+    // inconsistent value (e.g. in the middle of a write to millis_timer_millis)
+    cli();
+ c58:	f8 94       	cli
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:346
+    m = millis_timer_millis;
+ c5a:	c0 90 e9 01 	lds	r12, 0x01E9	; 0x8001e9 <millis_timer_millis>
+ c5e:	d0 90 ea 01 	lds	r13, 0x01EA	; 0x8001ea <millis_timer_millis+0x1>
+ c62:	e0 90 eb 01 	lds	r14, 0x01EB	; 0x8001eb <millis_timer_millis+0x2>
+ c66:	f0 90 ec 01 	lds	r15, 0x01EC	; 0x8001ec <millis_timer_millis+0x3>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:347
+    SREG = oldSREG;
+ c6a:	9f bf       	out	0x3f, r25	; 63
+loop():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:104
+ c6c:	90 e0       	ldi	r25, 0x00	; 0
+ c6e:	6a e0       	ldi	r22, 0x0A	; 10
+ c70:	70 e0       	ldi	r23, 0x00	; 0
+ c72:	c4 d0       	rcall	.+392    	; 0xdfc <__mulhi3>
+ c74:	80 50       	subi	r24, 0x00	; 0
+ c76:	9f 4f       	sbci	r25, 0xFF	; 255
+ c78:	fc 01       	movw	r30, r24
+ c7a:	c6 82       	std	Z+6, r12	; 0x06
+ c7c:	d7 82       	std	Z+7, r13	; 0x07
+ c7e:	e0 86       	std	Z+8, r14	; 0x08
+ c80:	f1 86       	std	Z+9, r15	; 0x09
+ c82:	6e cf       	rjmp	.-292    	; 0xb60 <main+0x176>
+begin():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:362
+    // the per-pin PCMSK register).
+    *digitalPinToPCICR(_receivePin) |= _BV(digitalPinToPCICRbit(_receivePin));
+    // Precalculate the pcint mask register and value, so setRxIntMask
+    // can be used inside the ISR without costing too much time.
+    _pcint_maskreg = digitalPinToPCMSK(_receivePin);
+    _pcint_maskvalue = _BV(digitalPinToPCMSKbit(_receivePin));
+ c84:	2a e0       	ldi	r18, 0x0A	; 10
+ c86:	30 e0       	ldi	r19, 0x00	; 0
+ c88:	24 1b       	sub	r18, r20
+ c8a:	35 0b       	sbc	r19, r21
+ c8c:	81 e0       	ldi	r24, 0x01	; 1
+ c8e:	01 c0       	rjmp	.+2      	; 0xc92 <main+0x2a8>
+ c90:	88 0f       	add	r24, r24
+ c92:	2a 95       	dec	r18
+ c94:	ea f7       	brpl	.-6      	; 0xc90 <main+0x2a6>
+ c96:	08 cf       	rjmp	.-496    	; 0xaa8 <main+0xbe>
+convertAscii():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:158
+// number, best understood by taking a look at an Ascii table. For example: we're 
+// changing an Ascii zero, to an actual zero: ASCII "0" = 48 decimal.
+byte convertAscii(byte asciiVal)
+{
+	if( asciiVal >= '0' && asciiVal <= '9' ) return asciiVal -= 48; 
+	else if( asciiVal >= 'A' && asciiVal <= 'F' ) return asciiVal -= 55; 
+ c98:	81 2f       	mov	r24, r17
+ c9a:	a9 cf       	rjmp	.-174    	; 0xbee <main+0x204>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:157
+// Changes Ascii Values to their decimal representation by subtracting a fixed
+// number, best understood by taking a look at an Ascii table. For example: we're 
+// changing an Ascii zero, to an actual zero: ASCII "0" = 48 decimal.
+byte convertAscii(byte asciiVal)
+{
+	if( asciiVal >= '0' && asciiVal <= '9' ) return asciiVal -= 48; 
+ c9c:	8a 30       	cpi	r24, 0x0A	; 10
+ c9e:	30 f0       	brcs	.+12     	; 0xcac <main+0x2c2>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:158
+	else if( asciiVal >= 'A' && asciiVal <= 'F' ) return asciiVal -= 55; 
+ ca0:	8f eb       	ldi	r24, 0xBF	; 191
+ ca2:	89 0f       	add	r24, r25
+ ca4:	86 30       	cpi	r24, 0x06	; 6
+ ca6:	38 f4       	brcc	.+14     	; 0xcb6 <main+0x2cc>
+ ca8:	89 ec       	ldi	r24, 0xC9	; 201
+ caa:	89 0f       	add	r24, r25
+getTagID():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:137
+	{
+		if( i % 2 == 0 && i !=0 ) j++; 
+		if( tempInc[i] == endByte ) break;
+		else if( i > 10 && (tempInc[i] == cRHex || tempInc[i] == lFHex)) continue; //Not part of the TAG ID
+		else if( i % 2 == 0 ) tempTagID[j] = convertAscii(tempInc[i]) << 4; //MSB
+		else ( tempTagID[j] |= convertAscii(tempInc[i]) );//LSB
+ cac:	90 81       	ld	r25, Z
+ cae:	98 2b       	or	r25, r24
+ cb0:	90 83       	st	Z, r25
+ cb2:	08 2f       	mov	r16, r24
+ cb4:	a1 cf       	rjmp	.-190    	; 0xbf8 <main+0x20e>
+convertAscii():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:158
+// number, best understood by taking a look at an Ascii table. For example: we're 
+// changing an Ascii zero, to an actual zero: ASCII "0" = 48 decimal.
+byte convertAscii(byte asciiVal)
+{
+	if( asciiVal >= '0' && asciiVal <= '9' ) return asciiVal -= 48; 
+	else if( asciiVal >= 'A' && asciiVal <= 'F' ) return asciiVal -= 55; 
+ cb6:	80 2f       	mov	r24, r16
+ cb8:	f9 cf       	rjmp	.-14     	; 0xcac <main+0x2c2>
+loop():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:106
+		{	
+			if( atSerial.read() != startByte ) break; 
+			delay(11);//Necessary to not overwhelm the ID-XXLA module baud rate.
+			if( getTagID() ) tagEvent[newestTag].tagTime = millis(); //Get the Tag ID, and verify its' contents, then grab time. 
+		}
+		if( ++newestTag== MAX_TAG_STORAGE ) newestTag = 0; 
+ cba:	80 91 c8 01 	lds	r24, 0x01C8	; 0x8001c8 <newestTag>
+ cbe:	8f 5f       	subi	r24, 0xFF	; 255
+ cc0:	80 93 c8 01 	sts	0x01C8, r24	; 0x8001c8 <newestTag>
+ cc4:	84 31       	cpi	r24, 0x14	; 20
+ cc6:	11 f4       	brne	.+4      	; 0xccc <main+0x2e2>
+ cc8:	10 92 c8 01 	sts	0x01C8, r1	; 0x8001c8 <newestTag>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:110
+	}
+
+  //Set interrupt pin as needed
+  if(newestTag != oldestTag	)
+ ccc:	90 91 c8 01 	lds	r25, 0x01C8	; 0x8001c8 <newestTag>
+ cd0:	80 91 ff 00 	lds	r24, 0x00FF	; 0x8000ff <oldestTag>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:111
+    digitalWrite(interruptPin, LOW); //We have tags on the stack!
+ cd4:	60 e0       	ldi	r22, 0x00	; 0
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:110
+		}
+		if( ++newestTag== MAX_TAG_STORAGE ) newestTag = 0; 
+	}
+
+  //Set interrupt pin as needed
+  if(newestTag != oldestTag	)
+ cd6:	98 13       	cpse	r25, r24
+ cd8:	01 c0       	rjmp	.+2      	; 0xcdc <main+0x2f2>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:113
+    digitalWrite(interruptPin, LOW); //We have tags on the stack!
+  else
+    digitalWrite(interruptPin, HIGH); //No tag events to report
+ cda:	61 e0       	ldi	r22, 0x01	; 1
+ cdc:	83 e0       	ldi	r24, 0x03	; 3
+ cde:	09 dc       	rcall	.-2030   	; 0x4f2 <digitalWrite>
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:115
+
+  sleep_mode(); //Stop everything and go to sleep. Wake up if I2C event occurs.
+ ce0:	85 b7       	in	r24, 0x35	; 53
+ ce2:	80 62       	ori	r24, 0x20	; 32
+ ce4:	85 bf       	out	0x35, r24	; 53
+ ce6:	88 95       	sleep
+ ce8:	85 b7       	in	r24, 0x35	; 53
+ cea:	8f 7d       	andi	r24, 0xDF	; 223
+ cec:	85 bf       	out	0x35, r24	; 53
+ cee:	32 cf       	rjmp	.-412    	; 0xb54 <main+0x16a>
+
+00000cf0 <_GLOBAL__sub_I_setting_i2c_address>:
+_ZN5PrintC2Ev():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/Print.h:75
+  public:
+    Print() : write_error(0) {}
+ cf0:	10 92 cc 01 	sts	0x01CC, r1	; 0x8001cc <atSerial+0x3>
+ cf4:	10 92 cb 01 	sts	0x01CB, r1	; 0x8001cb <atSerial+0x2>
+_ZN6StreamC2Ev():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/Stream.h:64
+    virtual int available() = 0;
+    virtual int read() = 0;
+    virtual int peek() = 0;
+    virtual void flush() = 0;
+
+    Stream() {_timeout=1000;}
+ cf8:	88 ee       	ldi	r24, 0xE8	; 232
+ cfa:	93 e0       	ldi	r25, 0x03	; 3
+ cfc:	a0 e0       	ldi	r26, 0x00	; 0
+ cfe:	b0 e0       	ldi	r27, 0x00	; 0
+ d00:	80 93 cd 01 	sts	0x01CD, r24	; 0x8001cd <atSerial+0x4>
+ d04:	90 93 ce 01 	sts	0x01CE, r25	; 0x8001ce <atSerial+0x5>
+ d08:	a0 93 cf 01 	sts	0x01CF, r26	; 0x8001cf <atSerial+0x6>
+ d0c:	b0 93 d0 01 	sts	0x01D0, r27	; 0x8001d0 <atSerial+0x7>
+_GLOBAL__sub_I_setting_i2c_address():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:253
+  _rx_delay_centering(0),
+  _rx_delay_intrabit(0),
+  _rx_delay_stopbit(0),
+  _tx_delay(0),
+  _buffer_overflow(false),
+  _inverse_logic(inverse_logic)
+ d10:	86 e6       	ldi	r24, 0x66	; 102
+ d12:	90 e0       	ldi	r25, 0x00	; 0
+ d14:	90 93 ca 01 	sts	0x01CA, r25	; 0x8001ca <atSerial+0x1>
+ d18:	80 93 c9 01 	sts	0x01C9, r24	; 0x8001c9 <atSerial>
+ d1c:	10 92 e0 01 	sts	0x01E0, r1	; 0x8001e0 <atSerial+0x17>
+ d20:	10 92 df 01 	sts	0x01DF, r1	; 0x8001df <atSerial+0x16>
+ d24:	10 92 e2 01 	sts	0x01E2, r1	; 0x8001e2 <atSerial+0x19>
+ d28:	10 92 e1 01 	sts	0x01E1, r1	; 0x8001e1 <atSerial+0x18>
+ d2c:	10 92 e4 01 	sts	0x01E4, r1	; 0x8001e4 <atSerial+0x1b>
+ d30:	10 92 e3 01 	sts	0x01E3, r1	; 0x8001e3 <atSerial+0x1a>
+ d34:	10 92 e6 01 	sts	0x01E6, r1	; 0x8001e6 <atSerial+0x1d>
+ d38:	10 92 e5 01 	sts	0x01E5, r1	; 0x8001e5 <atSerial+0x1c>
+ d3c:	60 91 e7 01 	lds	r22, 0x01E7	; 0x8001e7 <atSerial+0x1e>
+ d40:	6e 7f       	andi	r22, 0xFE	; 254
+ d42:	6d 7f       	andi	r22, 0xFD	; 253
+ d44:	60 93 e7 01 	sts	0x01E7, r22	; 0x8001e7 <atSerial+0x1e>
+setTX():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:273
+{
+  // First write, then set output. If we do this the other way around,
+  // the pin would be output low for a short while before switching to
+  // output hihg. Now, it is input with pullup for a short while, which
+  // is fine. With inverse logic, either order is fine.
+  digitalWrite(tx, _inverse_logic ? LOW : HIGH);
+ d48:	66 95       	lsr	r22
+ d4a:	61 70       	andi	r22, 0x01	; 1
+ d4c:	81 e0       	ldi	r24, 0x01	; 1
+ d4e:	68 27       	eor	r22, r24
+ d50:	d0 db       	rcall	.-2144   	; 0x4f2 <digitalWrite>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:274
+  pinMode(tx, OUTPUT);
+ d52:	61 e0       	ldi	r22, 0x01	; 1
+ d54:	81 e0       	ldi	r24, 0x01	; 1
+ d56:	08 dc       	rcall	.-2032   	; 0x568 <pinMode>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:275
+  _transmitBitMask = digitalPinToBitMask(tx);
+ d58:	82 e0       	ldi	r24, 0x02	; 2
+ d5a:	80 93 d9 01 	sts	0x01D9, r24	; 0x8001d9 <atSerial+0x10>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:277
+  uint8_t port = digitalPinToPort(tx);
+  _transmitPortRegister = portOutputRegister(port);
+ d5e:	8b e3       	ldi	r24, 0x3B	; 59
+ d60:	90 e0       	ldi	r25, 0x00	; 0
+ d62:	90 93 db 01 	sts	0x01DB, r25	; 0x8001db <atSerial+0x12>
+ d66:	80 93 da 01 	sts	0x01DA, r24	; 0x8001da <atSerial+0x11>
+setRX():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:282
+}
+
+void SoftwareSerial::setRX(uint8_t rx)
+{
+  pinMode(rx, INPUT);
+ d6a:	60 e0       	ldi	r22, 0x00	; 0
+ d6c:	82 e0       	ldi	r24, 0x02	; 2
+ d6e:	fc db       	rcall	.-2056   	; 0x568 <pinMode>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:283
+  if (!_inverse_logic)
+ d70:	80 91 e7 01 	lds	r24, 0x01E7	; 0x8001e7 <atSerial+0x1e>
+ d74:	81 fd       	sbrc	r24, 1
+ d76:	03 c0       	rjmp	.+6      	; 0xd7e <_GLOBAL__sub_I_setting_i2c_address+0x8e>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:284
+    digitalWrite(rx, HIGH);  // pullup for normal logic!
+ d78:	61 e0       	ldi	r22, 0x01	; 1
+ d7a:	82 e0       	ldi	r24, 0x02	; 2
+ d7c:	ba db       	rcall	.-2188   	; 0x4f2 <digitalWrite>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:285
+  _receivePin = rx;
+ d7e:	82 e0       	ldi	r24, 0x02	; 2
+ d80:	80 93 d5 01 	sts	0x01D5, r24	; 0x8001d5 <atSerial+0xc>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:286
+  _receiveBitMask = digitalPinToBitMask(rx);
+ d84:	84 e0       	ldi	r24, 0x04	; 4
+ d86:	80 93 d6 01 	sts	0x01D6, r24	; 0x8001d6 <atSerial+0xd>
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:288
+  uint8_t port = digitalPinToPort(rx);
+  _receivePortRegister = portInputRegister(port);
+ d8a:	89 e3       	ldi	r24, 0x39	; 57
+ d8c:	90 e0       	ldi	r25, 0x00	; 0
+ d8e:	90 93 d8 01 	sts	0x01D8, r25	; 0x8001d8 <atSerial+0xf>
+ d92:	80 93 d7 01 	sts	0x01D7, r24	; 0x8001d7 <atSerial+0xe>
+_GLOBAL__sub_I_setting_i2c_address():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:261
+    Wire.begin(I2C_ADDRESS_NO_JUMPER); //Force address to I2C_ADDRESS_NO_JUMPER if user has opened the solder jumper
+
+  //The connections to the interrupts are severed when a Wire.begin occurs. So re-declare them.
+  Wire.onReceive(receiveEvent);
+  Wire.onRequest(requestEvent);
+}
+ d96:	08 95       	ret
+
+00000d98 <_GLOBAL__sub_D_setting_i2c_address>:
+_GLOBAL__sub_D_setting_i2c_address():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:262
+}
+
+//
+// Destructor
+//
+SoftwareSerial::~SoftwareSerial()
+ d98:	86 e6       	ldi	r24, 0x66	; 102
+ d9a:	90 e0       	ldi	r25, 0x00	; 0
+ d9c:	90 93 ca 01 	sts	0x01CA, r25	; 0x8001ca <atSerial+0x1>
+ da0:	80 93 c9 01 	sts	0x01C9, r24	; 0x8001c9 <atSerial>
+stopListening():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:109
+}
+
+// Stop listening. Returns true if we were actually listening.
+bool SoftwareSerial::stopListening()
+{
+  if (active_object == this)
+ da4:	80 91 e7 00 	lds	r24, 0x00E7	; 0x8000e7 <SoftwareSerial::active_object>
+ da8:	90 91 e8 00 	lds	r25, 0x00E8	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ dac:	89 5c       	subi	r24, 0xC9	; 201
+ dae:	91 40       	sbci	r25, 0x01	; 1
+ db0:	71 f4       	brne	.+28     	; 0xdce <_GLOBAL__sub_D_setting_i2c_address+0x36>
+setRxIntMsk():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:380
+void SoftwareSerial::setRxIntMsk(bool enable)
+{
+    if (enable)
+      *_pcint_maskreg |= _pcint_maskvalue;
+    else
+      *_pcint_maskreg &= ~_pcint_maskvalue;
+ db2:	e0 91 dc 01 	lds	r30, 0x01DC	; 0x8001dc <atSerial+0x13>
+ db6:	f0 91 dd 01 	lds	r31, 0x01DD	; 0x8001dd <atSerial+0x14>
+ dba:	90 81       	ld	r25, Z
+ dbc:	80 91 de 01 	lds	r24, 0x01DE	; 0x8001de <atSerial+0x15>
+ dc0:	80 95       	com	r24
+ dc2:	89 23       	and	r24, r25
+ dc4:	80 83       	st	Z, r24
+stopListening():
+/home/amo/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/libraries/SoftwareSerial/SoftwareSerial.cpp:112
+bool SoftwareSerial::stopListening()
+{
+  if (active_object == this)
+  {
+    setRxIntMsk(false);
+    active_object = NULL;
+ dc6:	10 92 e8 00 	sts	0x00E8, r1	; 0x8000e8 <SoftwareSerial::active_object+0x1>
+ dca:	10 92 e7 00 	sts	0x00E7, r1	; 0x8000e7 <SoftwareSerial::active_object>
+_GLOBAL__sub_D_setting_i2c_address():
+/home/amo/SparkFun/SparkFun_Qwiic_RFID_ID-XXLA/Firmware/ATtiny85_Firmware/Qwiic_RFID_IDXXLA/Qwiic_RFID_IDXXLA.ino:261
+ dce:	08 95       	ret
+
+00000dd0 <eeprom_read_byte>:
+eeprom_read_byte():
+ dd0:	e1 99       	sbic	0x1c, 1	; 28
+ dd2:	fe cf       	rjmp	.-4      	; 0xdd0 <eeprom_read_byte>
+ dd4:	9f bb       	out	0x1f, r25	; 31
+ dd6:	8e bb       	out	0x1e, r24	; 30
+ dd8:	e0 9a       	sbi	0x1c, 0	; 28
+ dda:	99 27       	eor	r25, r25
+ ddc:	8d b3       	in	r24, 0x1d	; 29
+ dde:	08 95       	ret
+
+00000de0 <eeprom_write_byte>:
+eeprom_write_byte():
+ de0:	26 2f       	mov	r18, r22
+
+00000de2 <eeprom_write_r18>:
+ de2:	e1 99       	sbic	0x1c, 1	; 28
+ de4:	fe cf       	rjmp	.-4      	; 0xde2 <eeprom_write_r18>
+ de6:	1c ba       	out	0x1c, r1	; 28
+ de8:	9f bb       	out	0x1f, r25	; 31
+ dea:	8e bb       	out	0x1e, r24	; 30
+ dec:	2d bb       	out	0x1d, r18	; 29
+ dee:	0f b6       	in	r0, 0x3f	; 63
+ df0:	f8 94       	cli
+ df2:	e2 9a       	sbi	0x1c, 2	; 28
+ df4:	e1 9a       	sbi	0x1c, 1	; 28
+ df6:	0f be       	out	0x3f, r0	; 63
+ df8:	01 96       	adiw	r24, 0x01	; 1
+ dfa:	08 95       	ret
+
+00000dfc <__mulhi3>:
+__mulhi3():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:312
+ dfc:	00 24       	eor	r0, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:313
+ dfe:	55 27       	eor	r21, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:314
+ e00:	04 c0       	rjmp	.+8      	; 0xe0a <__mulhi3+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:317
+ e02:	08 0e       	add	r0, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:318
+ e04:	59 1f       	adc	r21, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:320
+ e06:	88 0f       	add	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:321
+ e08:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:324
+ e0a:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:325
+ e0c:	29 f0       	breq	.+10     	; 0xe18 <__mulhi3+0x1c>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:328
+ e0e:	76 95       	lsr	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:329
+ e10:	67 95       	ror	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:331
+ e12:	b8 f3       	brcs	.-18     	; 0xe02 <__mulhi3+0x6>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:335
+ e14:	71 05       	cpc	r23, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:337
+ e16:	b9 f7       	brne	.-18     	; 0xe06 <__mulhi3+0xa>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:340
+ e18:	80 2d       	mov	r24, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:341
+ e1a:	95 2f       	mov	r25, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:342
+ e1c:	08 95       	ret
+
+00000e1e <__divmodhi4>:
+__divmodhi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1440
+ e1e:	97 fb       	bst	r25, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1441
+ e20:	07 2e       	mov	r0, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1442
+ e22:	16 f4       	brtc	.+4      	; 0xe28 <__divmodhi4+0xa>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1443
+ e24:	00 94       	com	r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1444
+ e26:	06 d0       	rcall	.+12     	; 0xe34 <__divmodhi4_neg1>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1446
+ e28:	77 fd       	sbrc	r23, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1447
+ e2a:	08 d0       	rcall	.+16     	; 0xe3c <__divmodhi4_neg2>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1448
+ e2c:	0b d0       	rcall	.+22     	; 0xe44 <__udivmodhi4>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1449
+ e2e:	07 fc       	sbrc	r0, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1450
+ e30:	05 d0       	rcall	.+10     	; 0xe3c <__divmodhi4_neg2>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1451
+ e32:	3e f4       	brtc	.+14     	; 0xe42 <__divmodhi4_exit>
+
+00000e34 <__divmodhi4_neg1>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1454
+ e34:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1455
+ e36:	81 95       	neg	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1456
+ e38:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1457
+ e3a:	08 95       	ret
+
+00000e3c <__divmodhi4_neg2>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1460
+ e3c:	70 95       	com	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1461
+ e3e:	61 95       	neg	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1462
+ e40:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000e42 <__divmodhi4_exit>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1464
+ e42:	08 95       	ret
+
+00000e44 <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ e44:	aa 1b       	sub	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ e46:	bb 1b       	sub	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ e48:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ e4a:	07 c0       	rjmp	.+14     	; 0xe5a <__udivmodhi4_ep>
+
+00000e4c <__udivmodhi4_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ e4c:	aa 1f       	adc	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ e4e:	bb 1f       	adc	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ e50:	a6 17       	cp	r26, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ e52:	b7 07       	cpc	r27, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ e54:	10 f0       	brcs	.+4      	; 0xe5a <__udivmodhi4_ep>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ e56:	a6 1b       	sub	r26, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ e58:	b7 0b       	sbc	r27, r23
+
+00000e5a <__udivmodhi4_ep>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ e5a:	88 1f       	adc	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ e5c:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ e5e:	5a 95       	dec	r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ e60:	a9 f7       	brne	.-22     	; 0xe4c <__udivmodhi4_loop>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ e62:	80 95       	com	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ e64:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ e66:	bc 01       	movw	r22, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ e68:	cd 01       	movw	r24, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ e6a:	08 95       	ret
+
+00000e6c <__tablejump2__>:
+__tablejump2__():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+ e6c:	ee 0f       	add	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+ e6e:	ff 1f       	adc	r31, r31
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+ e70:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+ e72:	f4 91       	lpm	r31, Z
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+ e74:	e0 2d       	mov	r30, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+ e76:	09 94       	ijmp
+
+00000e78 <__do_global_dtors>:
+__do_global_dtors():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2496
+ e78:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2497
+ e7a:	ca e2       	ldi	r28, 0x2A	; 42
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2498
+ e7c:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2502
+ e7e:	03 c0       	rjmp	.+6      	; 0xe86 <__do_global_dtors+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2508
+ e80:	fe 01       	movw	r30, r28
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2509
+ e82:	f4 df       	rcall	.-24     	; 0xe6c <__tablejump2__>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2510
+ e84:	21 96       	adiw	r28, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2515
+ e86:	cb 32       	cpi	r28, 0x2B	; 43
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2516
+ e88:	d1 07       	cpc	r29, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2521
+ e8a:	d1 f7       	brne	.-12     	; 0xe80 <__do_global_dtors+0x8>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ e8c:	f8 94       	cli
+
+00000e8e <__stop_program>:
+__stop_program():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ e8e:	ff cf       	rjmp	.-2      	; 0xe8e <__stop_program>
